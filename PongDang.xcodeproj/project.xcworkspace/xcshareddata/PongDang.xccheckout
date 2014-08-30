@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1649577E-ACB1-4A19-9F97-AA3C73568092</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PongDang</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8088CCE003B0A01C03ADA753A461BE6194F893DB</key>
+		<string>https://github.com/say8425/PongDang.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>PongDang.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8088CCE003B0A01C03ADA753A461BE6194F893DB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/say8425/PongDang.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8088CCE003B0A01C03ADA753A461BE6194F893DB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8088CCE003B0A01C03ADA753A461BE6194F893DB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>pongDang</string>
+		</dict>
+	</array>
+</dict>
+</plist>
