@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2440D4BE197BBA0A0043BF28 /* Info.plist */; };
+		24434DE619B1CD6B00DA1CE8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 24434DE519B1CD6B00DA1CE8 /* README.md */; };
 		244B8D9B1965CF8F0000D08F /* dropWater.png in Resources */ = {isa = PBXBuildFile; fileRef = 244B8D9A1965CF8F0000D08F /* dropWater.png */; };
 		244B8D9E1965D7ED0000D08F /* WhoMakeItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */; };
 		244B8DA01965E3860000D08F /* behind_alert_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 244B8D9F1965E3860000D08F /* behind_alert_view.png */; };
@@ -58,6 +59,7 @@
 
 /* Begin PBXFileReference section */
 		2440D4DE197BCDCE0043BF28 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/Info.plist; sourceTree = "<group>"; };
+		24434DE519B1CD6B00DA1CE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		244B8D9A1965CF8F0000D08F /* dropWater.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropWater.png; sourceTree = "<group>"; };
 		244B8D9C1965D7EC0000D08F /* WhoMakeItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoMakeItViewController.h; sourceTree = "<group>"; };
 		244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoMakeItViewController.m; sourceTree = "<group>"; };
@@ -77,7 +79,7 @@
 		24A692E019654C88004F3791 /* icon_kakao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_kakao@2x.png"; sourceTree = "<group>"; };
 		24A692E219654C88004F3791 /* exportIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = exportIcon.png; sourceTree = "<group>"; };
 		24A692E319654C88004F3791 /* whoMakeIt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whoMakeIt.png; sourceTree = "<group>"; };
-		24A692E919654CA9004F3791 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = ../../Framework/KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		24A692E919654CA9004F3791 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = ../../../Framework/KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		24A692EB19654CEF004F3791 /* KakaoLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KakaoLink.h; sourceTree = "<group>"; };
 		24A692EC19654CEF004F3791 /* KakaoLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KakaoLink.m; sourceTree = "<group>"; };
 		24AF1E86197C3B7200C1EF76 /* NanumMyeongjo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjo.otf; sourceTree = "<group>"; };
@@ -113,7 +115,7 @@
 		24A692A719654BF8004F3791 = {
 			isa = PBXGroup;
 			children = (
-				24A692E919654CA9004F3791 /* KakaoOpenSDK.framework */,
+				24434DE519B1CD6B00DA1CE8 /* README.md */,
 				24A692B219654BF8004F3791 /* pongDang */,
 				24A692CC19654BF9004F3791 /* PongDangTests */,
 				24A692B119654BF8004F3791 /* Products */,
@@ -133,8 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				24DC25A919817B7900464996 /* Main.storyboard */,
-				24A692DE19654C7C004F3791 /* imageRES */,
-				24C3ADBC197FD65700A3CABE /* Library */,
 				24A692D919654C6C004F3791 /* ViewController.h */,
 				24A692DA19654C6C004F3791 /* ViewController.m */,
 				244B8D9C1965D7EC0000D08F /* WhoMakeItViewController.h */,
@@ -149,6 +149,9 @@
 		24A692B319654BF8004F3791 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24A692DE19654C7C004F3791 /* imageRES */,
+				24C3ADBC197FD65700A3CABE /* Library */,
+				24A692E919654CA9004F3791 /* KakaoOpenSDK.framework */,
 				24A692B719654BF9004F3791 /* AppDelegate.h */,
 				24A692B819654BF9004F3791 /* AppDelegate.m */,
 				2440D4BE197BBA0A0043BF28 /* Info.plist */,
@@ -325,6 +328,7 @@
 				24A692DC19654C6C004F3791 /* ViewController.m in Sources */,
 				24C3ADBB197FD64F00A3CABE /* whoMakeItSegue.m in Sources */,
 				24A692ED19654CEF004F3791 /* KakaoLink.m in Sources */,
+				24434DE619B1CD6B00DA1CE8 /* README.md in Sources */,
 				24A692B619654BF8004F3791 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
