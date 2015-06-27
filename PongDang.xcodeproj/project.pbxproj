@@ -259,7 +259,7 @@
 				TargetAttributes = {
 					24A692AF19654BF8004F3791 = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = FS9C8D2C2M;
+						DevelopmentTeam = GLF72AFEW2;
 					};
 					24A692C819654BF9004F3791 = {
 						CreatedOnToolsVersion = 6.0;
@@ -460,7 +460,7 @@
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
 				);
 				INFOPLIST_FILE = pongDang/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = PongDang;
@@ -478,7 +478,7 @@
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
 				);
 				INFOPLIST_FILE = pongDang/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_NAME = PongDang;
