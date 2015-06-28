@@ -19,7 +19,7 @@
 }
 
 - (UIImage *)activityImage {
-    return [UIImage imageNamed:@"icon_kakao"];
+    return [UIImage imageNamed:@"exportKakao"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
