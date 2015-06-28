@@ -31,7 +31,7 @@
                                     <constraint firstAttribute="height" constant="45" id="DHh-Qm-2Cx"/>
                                     <constraint firstAttribute="width" constant="45" id="NoG-6n-C8D"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="exportIcon.png">
+                                <state key="normal" image="exportIcon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="height" constant="38" id="fNP-z3-TOT"/>
                                     <constraint firstAttribute="width" constant="38" id="w7A-uV-Zue"/>
                                 </constraints>
-                                <state key="normal" title="Button" image="whoMakeIt.png">
+                                <state key="normal" image="whoMakeIt.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -128,7 +128,7 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WKI-XR-rGs" userLabel="backButton">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <state key="normal" backgroundImage="behind_alert_view.png">
+                                <state key="normal" backgroundImage="backButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -255,13 +255,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="behind_alert_view.png" width="320" height="568"/>
-        <image name="cameraIcon.png" width="34" height="22"/>
+        <image name="backButton.png" width="375" height="667"/>
+        <image name="cameraIcon.png" width="26" height="17"/>
         <image name="dropWater.png" width="50" height="80"/>
-        <image name="exportIcon.png" width="512" height="512"/>
+        <image name="exportIcon.png" width="45" height="45"/>
         <image name="hanDay.png" width="375" height="667"/>
-        <image name="keyboard.png" width="34" height="22"/>
-        <image name="serverIcon.png" width="34" height="21"/>
-        <image name="whoMakeIt.png" width="512" height="512"/>
+        <image name="keyboard.png" width="17" height="11"/>
+        <image name="serverIcon.png" width="17" height="10"/>
+        <image name="whoMakeIt.png" width="45" height="45"/>
     </resources>
 </document>
