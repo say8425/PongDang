@@ -19,7 +19,7 @@
 }
 
 - (UIImage *)activityImage {
-    return [UIImage imageNamed:@"exportKakao"];
+    return [UIImage imageNamed:@"exportKakao.png"];
 }
 
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {

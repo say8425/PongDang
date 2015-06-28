@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24387C941B406B1E00816F30 /* exportKakao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C921B406B1E00816F30 /* exportKakao@3x.png */; };
+		24387C951B406B1E00816F30 /* exportKakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C931B406B1E00816F30 /* exportKakao@2x.png */; };
 		2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2440D4BE197BBA0A0043BF28 /* Info.plist */; };
-		24434DE619B1CD6B00DA1CE8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 24434DE519B1CD6B00DA1CE8 /* README.md */; };
 		244B8D9E1965D7ED0000D08F /* WhoMakeItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */; };
 		24A692B619654BF8004F3791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B519654BF8004F3791 /* main.m */; };
 		24A692B919654BF9004F3791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B819654BF9004F3791 /* AppDelegate.m */; };
@@ -34,8 +35,6 @@
 		24D7A4331B3FE2D2006CE87C /* exportIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4311B3FE2D2006CE87C /* exportIcon@2x.png */; };
 		24D7A43C1B3FE496006CE87C /* backButton@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A43A1B3FE496006CE87C /* backButton@3x.png */; };
 		24D7A43D1B3FE496006CE87C /* backButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A43B1B3FE496006CE87C /* backButton@2x.png */; };
-		24D7A4401B3FE520006CE87C /* exportkakao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A43E1B3FE520006CE87C /* exportkakao@3x.png */; };
-		24D7A4411B3FE520006CE87C /* exportkakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A43F1B3FE520006CE87C /* exportkakao@2x.png */; };
 		24D7A4441B3FE9F4006CE87C /* keyboardIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4421B3FE9F4006CE87C /* keyboardIcon@3x.png */; };
 		24D7A4451B3FE9F4006CE87C /* keyboardIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */; };
 		24DC25AA19817B7900464996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DC25A919817B7900464996 /* Main.storyboard */; };
@@ -66,8 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24387C921B406B1E00816F30 /* exportKakao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportKakao@3x.png"; sourceTree = "<group>"; };
+		24387C931B406B1E00816F30 /* exportKakao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportKakao@2x.png"; sourceTree = "<group>"; };
 		2440D4DE197BCDCE0043BF28 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/Info.plist; sourceTree = "<group>"; };
-		24434DE519B1CD6B00DA1CE8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		244B8D9C1965D7EC0000D08F /* WhoMakeItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoMakeItViewController.h; sourceTree = "<group>"; };
 		244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoMakeItViewController.m; sourceTree = "<group>"; };
 		24A692B019654BF8004F3791 /* PongDang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongDang.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,8 +101,6 @@
 		24D7A4311B3FE2D2006CE87C /* exportIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportIcon@2x.png"; sourceTree = "<group>"; };
 		24D7A43A1B3FE496006CE87C /* backButton@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@3x.png"; sourceTree = "<group>"; };
 		24D7A43B1B3FE496006CE87C /* backButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backButton@2x.png"; sourceTree = "<group>"; };
-		24D7A43E1B3FE520006CE87C /* exportkakao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportkakao@3x.png"; sourceTree = "<group>"; };
-		24D7A43F1B3FE520006CE87C /* exportkakao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportkakao@2x.png"; sourceTree = "<group>"; };
 		24D7A4421B3FE9F4006CE87C /* keyboardIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardIcon@3x.png"; sourceTree = "<group>"; };
 		24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardIcon@2x.png"; sourceTree = "<group>"; };
 		24DC25A919817B7900464996 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 		24A692A719654BF8004F3791 = {
 			isa = PBXGroup;
 			children = (
-				24434DE519B1CD6B00DA1CE8 /* README.md */,
 				24A692B219654BF8004F3791 /* pongDang */,
 				24A692CC19654BF9004F3791 /* PongDangTests */,
 				24A692B119654BF8004F3791 /* Products */,
@@ -209,8 +206,8 @@
 				24D7A4211B3FDF66006CE87C /* cameraIcon@3x.png */,
 				24D7A43B1B3FE496006CE87C /* backButton@2x.png */,
 				24D7A43A1B3FE496006CE87C /* backButton@3x.png */,
-				24D7A43E1B3FE520006CE87C /* exportkakao@3x.png */,
-				24D7A43F1B3FE520006CE87C /* exportkakao@2x.png */,
+				24387C931B406B1E00816F30 /* exportKakao@2x.png */,
+				24387C921B406B1E00816F30 /* exportKakao@3x.png */,
 				24D7A42D1B3FE15B006CE87C /* whoMakeIt@2x.png */,
 				24D7A42C1B3FE15B006CE87C /* whoMakeIt@3x.png */,
 				24D7A4311B3FE2D2006CE87C /* exportIcon@2x.png */,
@@ -320,20 +317,20 @@
 				24D7A4221B3FDF66006CE87C /* cameraIcon@2x.png in Resources */,
 				24D7A41B1B3F19C4006CE87C /* dropWater@3x.png in Resources */,
 				24D7A4451B3FE9F4006CE87C /* keyboardIcon@2x.png in Resources */,
-				24D7A4401B3FE520006CE87C /* exportkakao@3x.png in Resources */,
 				24D7A4441B3FE9F4006CE87C /* keyboardIcon@3x.png in Resources */,
 				24D7A4321B3FE2D2006CE87C /* exportIcon@3x.png in Resources */,
 				24D7A4331B3FE2D2006CE87C /* exportIcon@2x.png in Resources */,
+				24387C951B406B1E00816F30 /* exportKakao@2x.png in Resources */,
 				24D7A43D1B3FE496006CE87C /* backButton@2x.png in Resources */,
 				24D7A42F1B3FE15B006CE87C /* whoMakeIt@2x.png in Resources */,
 				24DC25AA19817B7900464996 /* Main.storyboard in Resources */,
 				2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */,
 				24D7A41D1B3F19F4006CE87C /* dropWater@2x.png in Resources */,
 				24D7A4231B3FDF66006CE87C /* cameraIcon@3x.png in Resources */,
-				24D7A4411B3FE520006CE87C /* exportkakao@2x.png in Resources */,
 				24D7A4191B3F175B006CE87C /* hanDay@2x.png in Resources */,
 				24D7A4261B3FDFBB006CE87C /* serverIcon@2x.png in Resources */,
 				24D7A41F1B3FDC3F006CE87C /* NanumMyeongjo.otf in Resources */,
+				24387C941B406B1E00816F30 /* exportKakao@3x.png in Resources */,
 				24D7A42E1B3FE15B006CE87C /* whoMakeIt@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -358,7 +355,6 @@
 				24A692DC19654C6C004F3791 /* ViewController.m in Sources */,
 				24C3ADBB197FD64F00A3CABE /* whoMakeItSegue.m in Sources */,
 				24A692ED19654CEF004F3791 /* KakaoLink.m in Sources */,
-				24434DE619B1CD6B00DA1CE8 /* README.md in Sources */,
 				24A692B619654BF8004F3791 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
