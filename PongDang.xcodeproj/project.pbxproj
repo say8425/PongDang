@@ -11,6 +11,7 @@
 		24387C951B406B1E00816F30 /* exportKakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C931B406B1E00816F30 /* exportKakao@2x.png */; };
 		2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2440D4BE197BBA0A0043BF28 /* Info.plist */; };
 		244B8D9E1965D7ED0000D08F /* WhoMakeItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */; };
+		24892DE21B4395C6004C7EE0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24892DE11B4395C6004C7EE0 /* KakaoOpenSDK.framework */; };
 		24A692B619654BF8004F3791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B519654BF8004F3791 /* main.m */; };
 		24A692B919654BF9004F3791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B819654BF9004F3791 /* AppDelegate.m */; };
 		24A692BC19654BF9004F3791 /* pongDang.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24A692BA19654BF9004F3791 /* pongDang.xcdatamodeld */; };
@@ -23,7 +24,6 @@
 		24D7A4191B3F175B006CE87C /* hanDay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4181B3F175B006CE87C /* hanDay@2x.png */; };
 		24D7A41B1B3F19C4006CE87C /* dropWater@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A41A1B3F19C4006CE87C /* dropWater@3x.png */; };
 		24D7A41D1B3F19F4006CE87C /* dropWater@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A41C1B3F19F4006CE87C /* dropWater@2x.png */; };
-		24D7A41E1B3FD9F8006CE87C /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24D7A4121B3F10AA006CE87C /* KakaoOpenSDK.framework */; };
 		24D7A41F1B3FDC3F006CE87C /* NanumMyeongjo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 24AF1E86197C3B7200C1EF76 /* NanumMyeongjo.otf */; };
 		24D7A4221B3FDF66006CE87C /* cameraIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4201B3FDF66006CE87C /* cameraIcon@2x.png */; };
 		24D7A4231B3FDF66006CE87C /* cameraIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4211B3FDF66006CE87C /* cameraIcon@3x.png */; };
@@ -70,6 +70,7 @@
 		2440D4DE197BCDCE0043BF28 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/Info.plist; sourceTree = "<group>"; };
 		244B8D9C1965D7EC0000D08F /* WhoMakeItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoMakeItViewController.h; sourceTree = "<group>"; };
 		244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoMakeItViewController.m; sourceTree = "<group>"; };
+		24892DE11B4395C6004C7EE0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		24A692B019654BF8004F3791 /* PongDang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongDang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A692B519654BF8004F3791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24A692B719654BF9004F3791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -86,7 +87,6 @@
 		24AF1E86197C3B7200C1EF76 /* NanumMyeongjo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NanumMyeongjo.otf; sourceTree = "<group>"; };
 		24C3ADB9197FD64F00A3CABE /* whoMakeItSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = whoMakeItSegue.h; sourceTree = "<group>"; };
 		24C3ADBA197FD64F00A3CABE /* whoMakeItSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = whoMakeItSegue.m; sourceTree = "<group>"; };
-		24D7A4121B3F10AA006CE87C /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KakaoOpenSDK.framework; path = "../../../../../Downloads/kakao-ios-sdk-1.0.34/KakaoOpenSDK.framework"; sourceTree = "<group>"; };
 		24D7A4161B3F16C7006CE87C /* hanDay@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hanDay@3x.png"; sourceTree = "<group>"; };
 		24D7A4181B3F175B006CE87C /* hanDay@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hanDay@2x.png"; sourceTree = "<group>"; };
 		24D7A41A1B3F19C4006CE87C /* dropWater@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dropWater@3x.png"; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24D7A41E1B3FD9F8006CE87C /* KakaoOpenSDK.framework in Frameworks */,
+				24892DE21B4395C6004C7EE0 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,7 +163,6 @@
 			children = (
 				24A692DE19654C7C004F3791 /* imageRES */,
 				24C3ADBC197FD65700A3CABE /* Library */,
-				24D7A4121B3F10AA006CE87C /* KakaoOpenSDK.framework */,
 				24AF1E86197C3B7200C1EF76 /* NanumMyeongjo.otf */,
 				24A692B719654BF9004F3791 /* AppDelegate.h */,
 				24A692B819654BF9004F3791 /* AppDelegate.m */,
@@ -219,6 +218,7 @@
 		24C3ADBC197FD65700A3CABE /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				24892DE11B4395C6004C7EE0 /* KakaoOpenSDK.framework */,
 				24A692EB19654CEF004F3791 /* KakaoLink.h */,
 				24A692EC19654CEF004F3791 /* KakaoLink.m */,
 				24C3ADB9197FD64F00A3CABE /* whoMakeItSegue.h */,
@@ -485,6 +485,7 @@
 					"$(inherited)",
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
 					"/Users/northPenguin/Downloads/kakao-ios-sdk-1.0.34",
+					"$(PROJECT_DIR)/pongDang",
 				);
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -505,6 +506,7 @@
 					"$(inherited)",
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
 					"/Users/northPenguin/Downloads/kakao-ios-sdk-1.0.34",
+					"$(PROJECT_DIR)/pongDang",
 				);
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
