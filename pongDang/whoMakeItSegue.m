@@ -18,7 +18,7 @@
     [destinView setAlpha:0.0];
     [window insertSubview:destinView aboveSubview:sourceView];
 
-    [UIView animateWithDuration:0.63
+    [UIView animateWithDuration:0.42
                      animations:^{
                          [destinView setAlpha:1.0];
                      }
