@@ -29,14 +29,7 @@
         [currentConnection cancel];
         currentConnection = nil;
         self.apiReturnData = nil;
-    } else {
-//        UIAlertView *comuError = [[UIAlertView alloc]initWithTitle:@"미안해요"
-//                                                           message:@"통신상태가 불안정한 거 같아요"
-//                                                          delegate:nil
-//                                                 cancelButtonTitle:@"오양"
-//                                                 otherButtonTitles:nil];
-        //uialertController setting
-    }
+    } 
     currentConnection = [[NSURLConnection alloc]initWithRequest:tempRequest delegate:self];
     self.apiReturnData = [NSMutableData data];
 }
