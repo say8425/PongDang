@@ -11,7 +11,6 @@
 		24387C951B406B1E00816F30 /* exportKakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C931B406B1E00816F30 /* exportKakao@2x.png */; };
 		2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2440D4BE197BBA0A0043BF28 /* Info.plist */; };
 		244B8D9E1965D7ED0000D08F /* WhoMakeItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */; };
-		24892DE21B4395C6004C7EE0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24892DE11B4395C6004C7EE0 /* KakaoOpenSDK.framework */; };
 		24A692B619654BF8004F3791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B519654BF8004F3791 /* main.m */; };
 		24A692B919654BF9004F3791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B819654BF9004F3791 /* AppDelegate.m */; };
 		24A692BC19654BF9004F3791 /* pongDang.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24A692BA19654BF9004F3791 /* pongDang.xcdatamodeld */; };
@@ -38,6 +37,7 @@
 		24D7A4441B3FE9F4006CE87C /* keyboardIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4421B3FE9F4006CE87C /* keyboardIcon@3x.png */; };
 		24D7A4451B3FE9F4006CE87C /* keyboardIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */; };
 		24DC25AA19817B7900464996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DC25A919817B7900464996 /* Main.storyboard */; };
+		24ED0DDD1B57E13E00DC05F3 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ED0DDC1B57E13E00DC05F3 /* KakaoOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,7 +70,6 @@
 		2440D4DE197BCDCE0043BF28 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/Info.plist; sourceTree = "<group>"; };
 		244B8D9C1965D7EC0000D08F /* WhoMakeItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoMakeItViewController.h; sourceTree = "<group>"; };
 		244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoMakeItViewController.m; sourceTree = "<group>"; };
-		24892DE11B4395C6004C7EE0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		24A692B019654BF8004F3791 /* PongDang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongDang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A692B519654BF8004F3791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24A692B719654BF9004F3791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +103,7 @@
 		24D7A4421B3FE9F4006CE87C /* keyboardIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardIcon@3x.png"; sourceTree = "<group>"; };
 		24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardIcon@2x.png"; sourceTree = "<group>"; };
 		24DC25A919817B7900464996 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		24ED0DDC1B57E13E00DC05F3 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24892DE21B4395C6004C7EE0 /* KakaoOpenSDK.framework in Frameworks */,
+				24ED0DDD1B57E13E00DC05F3 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +218,7 @@
 		24C3ADBC197FD65700A3CABE /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				24892DE11B4395C6004C7EE0 /* KakaoOpenSDK.framework */,
+				24ED0DDC1B57E13E00DC05F3 /* KakaoOpenSDK.framework */,
 				24A692EB19654CEF004F3791 /* KakaoLink.h */,
 				24A692EC19654CEF004F3791 /* KakaoLink.m */,
 				24C3ADB9197FD64F00A3CABE /* whoMakeItSegue.h */,
@@ -486,6 +486,7 @@
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
 					"/Users/northPenguin/Downloads/kakao-ios-sdk-1.0.34",
 					"$(PROJECT_DIR)/pongDang",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -507,6 +508,7 @@
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
 					"/Users/northPenguin/Downloads/kakao-ios-sdk-1.0.34",
 					"$(PROJECT_DIR)/pongDang",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
