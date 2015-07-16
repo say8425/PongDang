@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PongDangWidget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Widget.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>pongDang.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2494CC261B57E78F007C5C18</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2494CC3D1B57E8EB007C5C18</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>24A692AF19654BF8004F3791</key>
 		<dict>
 			<key>primary</key>

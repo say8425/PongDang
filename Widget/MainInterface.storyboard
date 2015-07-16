@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NanumMyeongjo.otf">
+            <string>NanumMyeongjoOTF</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지    금    한    강    은" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-NT-DbY">
+                                <rect key="frame" x="26" y="48" width="204" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="RIv-1H-HhR"/>
+                                    <constraint firstAttribute="width" constant="204" id="ukx-jh-bLk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NanumMyeongjoOTF" family="NanumMyeongjoOTF" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-81-dtV">
+                                <rect key="frame" x="228" y="57" width="53" height="28"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53" id="1aJ-zL-fUD"/>
+                                    <constraint firstAttribute="height" constant="28" id="Gth-fx-O0R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropWater.png" translatesAutoresizingMaskIntoConstraints="NO" id="SO5-bA-dYp" userLabel="dropWater.png">
+                                <rect key="frame" x="228" y="19" width="53" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="cR0-vb-Zed"/>
+                                    <constraint firstAttribute="width" constant="53" id="y8N-Vj-7LK"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="zs3-NT-DbY" secondAttribute="centerX" constant="32" id="LTj-DJ-wbZ"/>
+                            <constraint firstItem="0jw-81-dtV" firstAttribute="centerX" secondItem="SO5-bA-dYp" secondAttribute="centerX" id="R4Z-IM-3B0"/>
+                            <constraint firstItem="zs3-NT-DbY" firstAttribute="trailing" secondItem="SO5-bA-dYp" secondAttribute="trailing" constant="-51" id="Wok-Eo-0oS"/>
+                            <constraint firstAttribute="centerY" secondItem="zs3-NT-DbY" secondAttribute="centerY" constant="0.5" id="mPd-Pu-rvl"/>
+                            <constraint firstItem="0jw-81-dtV" firstAttribute="centerY" secondItem="SO5-bA-dYp" secondAttribute="centerY" constant="8" id="n7g-87-Fmt"/>
+                            <constraint firstAttribute="centerY" secondItem="SO5-bA-dYp" secondAttribute="centerY" constant="8" id="xea-bf-BpF"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="142"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dropWater.png" width="50" height="80"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

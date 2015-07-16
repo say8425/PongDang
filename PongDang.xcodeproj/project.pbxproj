@@ -11,6 +11,10 @@
 		24387C951B406B1E00816F30 /* exportKakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C931B406B1E00816F30 /* exportKakao@2x.png */; };
 		2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2440D4BE197BBA0A0043BF28 /* Info.plist */; };
 		244B8D9E1965D7ED0000D08F /* WhoMakeItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */; };
+		2494CC411B57E8EB007C5C18 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2494CC401B57E8EB007C5C18 /* NotificationCenter.framework */; };
+		2494CC471B57E8EB007C5C18 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2494CC461B57E8EB007C5C18 /* TodayViewController.m */; };
+		2494CC491B57E8EB007C5C18 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2494CC481B57E8EB007C5C18 /* MainInterface.storyboard */; };
+		2494CC4C1B57E8EB007C5C18 /* Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2494CC3E1B57E8EB007C5C18 /* Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		24A692B619654BF8004F3791 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B519654BF8004F3791 /* main.m */; };
 		24A692B919654BF9004F3791 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A692B819654BF9004F3791 /* AppDelegate.m */; };
 		24A692BC19654BF9004F3791 /* pongDang.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24A692BA19654BF9004F3791 /* pongDang.xcdatamodeld */; };
@@ -55,6 +59,13 @@
 			remoteGlobalIDString = 24A692AF19654BF8004F3791;
 			remoteInfo = pongDang;
 		};
+		2494CC4A1B57E8EB007C5C18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24A692A819654BF8004F3791 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2494CC3D1B57E8EB007C5C18;
+			remoteInfo = Widget;
+		};
 		24A692CA19654BF9004F3791 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 24A692A819654BF8004F3791 /* Project object */;
@@ -64,12 +75,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2494CC501B57E8EB007C5C18 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2494CC4C1B57E8EB007C5C18 /* Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		24387C921B406B1E00816F30 /* exportKakao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportKakao@3x.png"; sourceTree = "<group>"; };
 		24387C931B406B1E00816F30 /* exportKakao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportKakao@2x.png"; sourceTree = "<group>"; };
 		2440D4DE197BCDCE0043BF28 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/Info.plist; sourceTree = "<group>"; };
 		244B8D9C1965D7EC0000D08F /* WhoMakeItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoMakeItViewController.h; sourceTree = "<group>"; };
 		244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoMakeItViewController.m; sourceTree = "<group>"; };
+		2494CC3E1B57E8EB007C5C18 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		2494CC401B57E8EB007C5C18 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		2494CC441B57E8EB007C5C18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2494CC451B57E8EB007C5C18 /* TodayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayViewController.h; sourceTree = "<group>"; };
+		2494CC461B57E8EB007C5C18 /* TodayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayViewController.m; sourceTree = "<group>"; };
+		2494CC481B57E8EB007C5C18 /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		24A692B019654BF8004F3791 /* PongDang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PongDang.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A692B519654BF8004F3791 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		24A692B719654BF9004F3791 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -107,6 +138,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2494CC3B1B57E8EB007C5C18 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2494CC411B57E8EB007C5C18 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24A692AD19654BF8004F3791 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -125,11 +164,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2494CC3F1B57E8EB007C5C18 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2494CC401B57E8EB007C5C18 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2494CC421B57E8EB007C5C18 /* Widget */ = {
+			isa = PBXGroup;
+			children = (
+				2494CC451B57E8EB007C5C18 /* TodayViewController.h */,
+				2494CC461B57E8EB007C5C18 /* TodayViewController.m */,
+				2494CC481B57E8EB007C5C18 /* MainInterface.storyboard */,
+				2494CC431B57E8EB007C5C18 /* Supporting Files */,
+			);
+			path = Widget;
+			sourceTree = "<group>";
+		};
+		2494CC431B57E8EB007C5C18 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2494CC441B57E8EB007C5C18 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		24A692A719654BF8004F3791 = {
 			isa = PBXGroup;
 			children = (
 				24A692B219654BF8004F3791 /* pongDang */,
 				24A692CC19654BF9004F3791 /* PongDangTests */,
+				2494CC421B57E8EB007C5C18 /* Widget */,
+				2494CC3F1B57E8EB007C5C18 /* Frameworks */,
 				24A692B119654BF8004F3791 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -139,6 +207,7 @@
 			children = (
 				24A692B019654BF8004F3791 /* PongDang.app */,
 				24A692C919654BF9004F3791 /* PongDangTests.xctest */,
+				2494CC3E1B57E8EB007C5C18 /* Widget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,6 +299,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		2494CC3D1B57E8EB007C5C18 /* Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2494CC4F1B57E8EB007C5C18 /* Build configuration list for PBXNativeTarget "Widget" */;
+			buildPhases = (
+				2494CC3A1B57E8EB007C5C18 /* Sources */,
+				2494CC3B1B57E8EB007C5C18 /* Frameworks */,
+				2494CC3C1B57E8EB007C5C18 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Widget;
+			productName = Widget;
+			productReference = 2494CC3E1B57E8EB007C5C18 /* Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		24A692AF19654BF8004F3791 /* PongDang */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24A692D319654BF9004F3791 /* Build configuration list for PBXNativeTarget "PongDang" */;
@@ -237,10 +323,12 @@
 				24A692AC19654BF8004F3791 /* Sources */,
 				24A692AD19654BF8004F3791 /* Frameworks */,
 				24A692AE19654BF8004F3791 /* Resources */,
+				2494CC501B57E8EB007C5C18 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				2494CC4B1B57E8EB007C5C18 /* PBXTargetDependency */,
 			);
 			name = PongDang;
 			productName = pongDang;
@@ -276,6 +364,10 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = northPenguin;
 				TargetAttributes = {
+					2494CC3D1B57E8EB007C5C18 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = GLF72AFEW2;
+					};
 					24A692AF19654BF8004F3791 = {
 						CreatedOnToolsVersion = 6.0;
 						DevelopmentTeam = GLF72AFEW2;
@@ -301,11 +393,20 @@
 			targets = (
 				24A692AF19654BF8004F3791 /* PongDang */,
 				24A692C819654BF9004F3791 /* PongDangTests */,
+				2494CC3D1B57E8EB007C5C18 /* Widget */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2494CC3C1B57E8EB007C5C18 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2494CC491B57E8EB007C5C18 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24A692AE19654BF8004F3791 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -345,6 +446,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2494CC3A1B57E8EB007C5C18 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2494CC471B57E8EB007C5C18 /* TodayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		24A692AC19654BF8004F3791 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -380,6 +489,11 @@
 			target = 24A692AF19654BF8004F3791 /* PongDang */;
 			targetProxy = 2440D4DF197BD6E10043BF28 /* PBXContainerItemProxy */;
 		};
+		2494CC4B1B57E8EB007C5C18 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2494CC3D1B57E8EB007C5C18 /* Widget */;
+			targetProxy = 2494CC4A1B57E8EB007C5C18 /* PBXContainerItemProxy */;
+		};
 		24A692CB19654BF9004F3791 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 24A692AF19654BF8004F3791 /* PongDang */;
@@ -399,6 +513,41 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2494CC4D1B57E8EB007C5C18 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2494CC4E1B57E8EB007C5C18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = Widget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		24A692D119654BF9004F3791 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -558,6 +707,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2494CC4F1B57E8EB007C5C18 /* Build configuration list for PBXNativeTarget "Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2494CC4D1B57E8EB007C5C18 /* Debug */,
+				2494CC4E1B57E8EB007C5C18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		24A692AB19654BF8004F3791 /* Build configuration list for PBXProject "PongDang" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
