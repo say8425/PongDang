@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayViewController : UIViewController
+@interface TodayViewController : UIViewController <NSURLConnectionDataDelegate, NSURLConnectionDataDelegate> {
+        NSURLConnection *currentConnection;
+}
+
+@property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (retain, nonatomic) NSMutableData *apiReturnData;
+@property (assign, nonatomic) float temp;
 
 @end

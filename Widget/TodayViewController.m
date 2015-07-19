@@ -17,7 +17,51 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.preferredContentSize = CGSizeMake(0.0, 118);
+    
+#pragma mark - Communication ready
+    
+    NSURL *tempURL = [NSURL URLWithString:@"http://hangang.dkserver.wo.tc"];
+    NSURLRequest *tempRequest = [NSURLRequest requestWithURL:tempURL];
+    
+    if (currentConnection) {
+        [currentConnection cancel];
+        currentConnection = nil;
+        self.apiReturnData = nil;
+    }
+    currentConnection = [[NSURLConnection alloc]initWithRequest:tempRequest delegate:self];
+    self.apiReturnData = [NSMutableData data];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+    [self.apiReturnData setLength:0];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    [self.apiReturnData appendData:data];
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    NSLog(@"URL Connection Failed!");
+    currentConnection = nil;
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+    id tempJson = [NSJSONSerialization JSONObjectWithData:self.apiReturnData options:0 error:nil];
+    self.temp   = [[tempJson objectForKey:@"temp"]floatValue];
+    
+    NSMutableAttributedString *tempText = [[NSMutableAttributedString alloc]initWithString:
+                                           [NSString stringWithFormat:@"%.1f", self.temp]];
+    NSMutableAttributedString *tempUnit = [[NSMutableAttributedString alloc]initWithString:@"℃"];
+    
+    [tempText setAttributes:@{NSFontAttributeName:[UIFont fontWithName:nil size:18],
+                              NSForegroundColorAttributeName:[UIColor whiteColor]} range:NSMakeRange(0, [tempText length])];
+    [tempUnit setAttributes:@{NSFontAttributeName:[UIFont fontWithName:nil size:12],
+                              NSForegroundColorAttributeName:[UIColor lightGrayColor]} range:NSMakeRange(0, [tempUnit length])];
+    [tempText appendAttributedString:tempUnit];
+    
+    self.tempLabel.attributedText = tempText;
+    currentConnection = nil;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +77,10 @@
     // If there's an update, use NCUpdateResultNewData
 
     completionHandler(NCUpdateResultNewData);
+}
+
+- (UIEdgeInsets)widgetMarginInsetsForProposedMarginInsets:(UIEdgeInsets)defaultMarginInsets {
+    return UIEdgeInsetsZero;
 }
 
 @end
