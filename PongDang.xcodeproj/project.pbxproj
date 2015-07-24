@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		241220B21B5E73E0008FDF68 /* dropWater@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A41C1B3F19F4006CE87C /* dropWater@2x.png */; };
+		241220B31B5E73E0008FDF68 /* dropWater@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A41A1B3F19C4006CE87C /* dropWater@3x.png */; };
 		24387C941B406B1E00816F30 /* exportKakao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C921B406B1E00816F30 /* exportKakao@3x.png */; };
 		24387C951B406B1E00816F30 /* exportKakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C931B406B1E00816F30 /* exportKakao@2x.png */; };
 		2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2440D4BE197BBA0A0043BF28 /* Info.plist */; };
@@ -417,6 +419,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241220B21B5E73E0008FDF68 /* dropWater@2x.png in Resources */,
+				241220B31B5E73E0008FDF68 /* dropWater@3x.png in Resources */,
 				2494CC491B57E8EB007C5C18 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
