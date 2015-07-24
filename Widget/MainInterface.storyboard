@@ -21,6 +21,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="118"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropWater.png" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-P6-nKV">
+                                <rect key="frame" x="229" y="12" width="50" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="Ks5-sC-Jd1"/>
+                                    <constraint firstAttribute="width" constant="50" id="Zmb-8F-QNi"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지    금    한    강    은" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-NT-DbY">
                                 <rect key="frame" x="26" y="36" width="204" height="45"/>
                                 <constraints>
@@ -31,23 +38,16 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38.5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-81-dtV">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-81-dtV">
                                 <rect key="frame" x="227" y="46" width="53" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="1aJ-zL-fUD"/>
                                     <constraint firstAttribute="height" constant="28" id="Gth-fx-O0R"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropWater.png" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-P6-nKV">
-                                <rect key="frame" x="229" y="12" width="50" height="82"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="82" id="Ks5-sC-Jd1"/>
-                                    <constraint firstAttribute="width" constant="50" id="Zmb-8F-QNi"/>
-                                </constraints>
-                            </imageView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="UNd-P6-nKV" firstAttribute="leading" secondItem="zs3-NT-DbY" secondAttribute="leading" constant="203" id="8R9-gd-Idw"/>
@@ -65,6 +65,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="118"/>
                     <connections>
+                        <outlet property="dropWater" destination="UNd-P6-nKV" id="o7L-wC-YRn"/>
                         <outlet property="tempLabel" destination="0jw-81-dtV" id="QeB-ME-NSf"/>
                     </connections>
                 </viewController>
