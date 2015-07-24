@@ -13,6 +13,7 @@
 }
 
 @property (weak, nonatomic) IBOutlet UILabel *tempLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *dropWater;
 @property (retain, nonatomic) NSMutableData *apiReturnData;
 @property (assign, nonatomic) float temp;
 
