@@ -659,7 +659,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
-					"/Users/northPenguin/Downloads/kakao-ios-sdk-1.0.34",
 					"$(PROJECT_DIR)/pongDang",
 					"$(PROJECT_DIR)",
 				);
@@ -684,7 +683,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/northPenguin/Desktop/Dev_iOS/Framework,
-					"/Users/northPenguin/Downloads/kakao-ios-sdk-1.0.34",
 					"$(PROJECT_DIR)/pongDang",
 					"$(PROJECT_DIR)",
 				);
