@@ -43,7 +43,7 @@
 		24D7A4441B3FE9F4006CE87C /* keyboardIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4421B3FE9F4006CE87C /* keyboardIcon@3x.png */; };
 		24D7A4451B3FE9F4006CE87C /* keyboardIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */; };
 		24DC25AA19817B7900464996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DC25A919817B7900464996 /* Main.storyboard */; };
-		24ED0DDD1B57E13E00DC05F3 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24ED0DDC1B57E13E00DC05F3 /* KakaoOpenSDK.framework */; };
+		AAC9206D1BB337570009C69A /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +139,7 @@
 		24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardIcon@2x.png"; sourceTree = "<group>"; };
 		24DC25A919817B7900464996 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24ED0DDC1B57E13E00DC05F3 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24ED0DDD1B57E13E00DC05F3 /* KakaoOpenSDK.framework in Frameworks */,
+				AAC9206D1BB337570009C69A /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +172,7 @@
 		2494CC3F1B57E8EB007C5C18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */,
 				2494CC401B57E8EB007C5C18 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
@@ -367,7 +369,7 @@
 		24A692A819654BF8004F3791 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = northPenguin;
 				TargetAttributes = {
 					2494CC3D1B57E8EB007C5C18 = {
@@ -547,6 +549,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.penguin.PongDang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -566,6 +569,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.penguin.PongDang.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -592,6 +596,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -656,16 +661,13 @@
 				CODE_SIGN_ENTITLEMENTS = PongDang/PongDang.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/northPenguin/Desktop/Dev_iOS/Framework,
-					"$(PROJECT_DIR)/pongDang",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.penguin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PongDang;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -680,16 +682,13 @@
 				CODE_SIGN_ENTITLEMENTS = PongDang/PongDang.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/northPenguin/Desktop/Dev_iOS/Framework,
-					"$(PROJECT_DIR)/pongDang",
-					"$(PROJECT_DIR)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "";
 				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.penguin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PongDang;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -700,10 +699,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pongDang.app/pongDang";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -711,6 +707,7 @@
 				INFOPLIST_FILE = pongDangTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "northPenguin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PongDangTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
@@ -720,13 +717,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/pongDang.app/pongDang";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
 				INFOPLIST_FILE = pongDangTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "northPenguin.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PongDangTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 			};
