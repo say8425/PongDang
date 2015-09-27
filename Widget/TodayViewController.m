@@ -54,9 +54,9 @@
                                            [NSString stringWithFormat:@"%.1f", self.temp]];
     NSMutableAttributedString *tempUnit = [[NSMutableAttributedString alloc]initWithString:@"℃"];
     
-    [tempText setAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"" size:14],
+    [tempText setAttributes:@{NSFontAttributeName:[UIFont fontWithName:nil size:14],
                               NSForegroundColorAttributeName:[UIColor colorWithWhite:1.0f alpha:0.65f]} range:NSMakeRange(0, [tempText length])];
-    [tempUnit setAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"" size:7],
+    [tempUnit setAttributes:@{NSFontAttributeName:[UIFont fontWithName:nil size:7],
                               NSForegroundColorAttributeName:[UIColor lightGrayColor]} range:NSMakeRange(0, [tempUnit length])];
     [tempText appendAttributedString:tempUnit];
     
