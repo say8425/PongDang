@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="NanumMyeongjo.otf">
@@ -23,6 +24,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" alpha="0.25" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropWater.png" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-P6-nKV">
                                 <rect key="frame" x="229" y="12" width="50" height="82"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="82" id="Ks5-sC-Jd1"/>
                                     <constraint firstAttribute="width" constant="50" id="Zmb-8F-QNi"/>
@@ -30,6 +32,7 @@
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지    금    한    강    은" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-NT-DbY">
                                 <rect key="frame" x="26" y="36" width="204" height="45"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="RIv-1H-HhR"/>
                                     <constraint firstAttribute="width" constant="204" id="ukx-jh-bLk"/>
@@ -40,6 +43,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0jw-81-dtV">
                                 <rect key="frame" x="227" y="46" width="53" height="28"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="1aJ-zL-fUD"/>
                                     <constraint firstAttribute="height" constant="28" id="Gth-fx-O0R"/>
@@ -49,6 +53,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <constraints>
                             <constraint firstItem="UNd-P6-nKV" firstAttribute="leading" secondItem="zs3-NT-DbY" secondAttribute="leading" constant="203" id="8R9-gd-Idw"/>
                             <constraint firstAttribute="centerX" secondItem="zs3-NT-DbY" secondAttribute="centerX" constant="32" id="LTj-DJ-wbZ"/>
@@ -77,9 +82,4 @@
     <resources>
         <image name="dropWater.png" width="50" height="80"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
