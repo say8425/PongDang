@@ -11,7 +11,6 @@
 		241220B31B5E73E0008FDF68 /* dropWater@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A41A1B3F19C4006CE87C /* dropWater@3x.png */; };
 		24387C941B406B1E00816F30 /* exportKakao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C921B406B1E00816F30 /* exportKakao@3x.png */; };
 		24387C951B406B1E00816F30 /* exportKakao@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C931B406B1E00816F30 /* exportKakao@2x.png */; };
-		2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2440D4BE197BBA0A0043BF28 /* Info.plist */; };
 		244B8D9E1965D7ED0000D08F /* WhoMakeItViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */; };
 		2494CC411B57E8EB007C5C18 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2494CC401B57E8EB007C5C18 /* NotificationCenter.framework */; };
 		2494CC471B57E8EB007C5C18 /* TodayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2494CC461B57E8EB007C5C18 /* TodayViewController.m */; };
@@ -94,7 +93,6 @@
 /* Begin PBXFileReference section */
 		24387C921B406B1E00816F30 /* exportKakao@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportKakao@3x.png"; sourceTree = "<group>"; };
 		24387C931B406B1E00816F30 /* exportKakao@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "exportKakao@2x.png"; sourceTree = "<group>"; };
-		2440D4DE197BCDCE0043BF28 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = ko; path = ko.lproj/Info.plist; sourceTree = "<group>"; };
 		244B8D9C1965D7EC0000D08F /* WhoMakeItViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhoMakeItViewController.h; sourceTree = "<group>"; };
 		244B8D9D1965D7ED0000D08F /* WhoMakeItViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhoMakeItViewController.m; sourceTree = "<group>"; };
 		2494CC3E1B57E8EB007C5C18 /* Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +137,7 @@
 		24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardIcon@2x.png"; sourceTree = "<group>"; };
 		24DC25A919817B7900464996 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24ED0DDC1B57E13E00DC05F3 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		AA0750131BB81BA100ED55D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,7 +242,7 @@
 				24AF1E86197C3B7200C1EF76 /* NanumMyeongjo.otf */,
 				24A692B719654BF9004F3791 /* AppDelegate.h */,
 				24A692B819654BF9004F3791 /* AppDelegate.m */,
-				2440D4BE197BBA0A0043BF28 /* Info.plist */,
+				AA0750131BB81BA100ED55D3 /* Info.plist */,
 				24A692B519654BF8004F3791 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -445,7 +444,6 @@
 				24D7A43D1B3FE496006CE87C /* backButton@2x.png in Resources */,
 				24D7A42F1B3FE15B006CE87C /* whoMakeIt@2x.png in Resources */,
 				24DC25AA19817B7900464996 /* Main.storyboard in Resources */,
-				2440D4BC197BBA0A0043BF28 /* Info.plist in Resources */,
 				24D7A41D1B3F19F4006CE87C /* dropWater@2x.png in Resources */,
 				24D7A4231B3FDF66006CE87C /* cameraIcon@3x.png in Resources */,
 				24D7A4191B3F175B006CE87C /* hanDay@2x.png in Resources */,
@@ -520,17 +518,6 @@
 			targetProxy = 24A692CA19654BF9004F3791 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		2440D4BE197BBA0A0043BF28 /* Info.plist */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2440D4DE197BCDCE0043BF28 /* ko */,
-			);
-			name = Info.plist;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2494CC4D1B57E8EB007C5C18 /* Debug */ = {
