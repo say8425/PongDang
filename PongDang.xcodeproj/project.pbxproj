@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20EA71B8D292BD02A5EE2128 /* Pods_PongDang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 924FE6992D0AD527FFE859E8 /* Pods_PongDang.framework */; };
 		241220B21B5E73E0008FDF68 /* dropWater@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A41C1B3F19F4006CE87C /* dropWater@2x.png */; };
 		241220B31B5E73E0008FDF68 /* dropWater@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A41A1B3F19C4006CE87C /* dropWater@3x.png */; };
 		24387C941B406B1E00816F30 /* exportKakao@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24387C921B406B1E00816F30 /* exportKakao@3x.png */; };
@@ -42,7 +43,7 @@
 		24D7A4441B3FE9F4006CE87C /* keyboardIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4421B3FE9F4006CE87C /* keyboardIcon@3x.png */; };
 		24D7A4451B3FE9F4006CE87C /* keyboardIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */; };
 		24DC25AA19817B7900464996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DC25A919817B7900464996 /* Main.storyboard */; };
-		AAC9206D1BB337570009C69A /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */; settings = {ASSET_TAGS = (); }; };
+		AAC9206D1BB337570009C69A /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,7 +138,10 @@
 		24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "keyboardIcon@2x.png"; sourceTree = "<group>"; };
 		24DC25A919817B7900464996 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		24ED0DDC1B57E13E00DC05F3 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		2E91BB4CA14486B71622BB6F /* Pods-PongDang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PongDang.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PongDang/Pods-PongDang.debug.xcconfig"; sourceTree = "<group>"; };
+		924FE6992D0AD527FFE859E8 /* Pods_PongDang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PongDang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0750131BB81BA100ED55D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA2F6A306072A3A4A37BF8AB /* Pods-PongDang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PongDang.release.xcconfig"; path = "Pods/Target Support Files/Pods-PongDang/Pods-PongDang.release.xcconfig"; sourceTree = "<group>"; };
 		AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC9206D1BB337570009C69A /* KakaoOpenSDK.framework in Frameworks */,
+				20EA71B8D292BD02A5EE2128 /* Pods_PongDang.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +178,7 @@
 			children = (
 				AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */,
 				2494CC401B57E8EB007C5C18 /* NotificationCenter.framework */,
+				924FE6992D0AD527FFE859E8 /* Pods_PongDang.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 				2494CC421B57E8EB007C5C18 /* Widget */,
 				2494CC3F1B57E8EB007C5C18 /* Frameworks */,
 				24A692B119654BF8004F3791 /* Products */,
+				88C22208B9DDE2708F60B61A /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,6 +310,15 @@
 			name = Library;
 			sourceTree = "<group>";
 		};
+		88C22208B9DDE2708F60B61A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E91BB4CA14486B71622BB6F /* Pods-PongDang.debug.xcconfig */,
+				AA2F6A306072A3A4A37BF8AB /* Pods-PongDang.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -327,10 +343,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24A692D319654BF9004F3791 /* Build configuration list for PBXNativeTarget "PongDang" */;
 			buildPhases = (
+				1E5B70C2161451293DAB147D /* Check Pods Manifest.lock */,
 				24A692AC19654BF8004F3791 /* Sources */,
 				24A692AD19654BF8004F3791 /* Frameworks */,
 				24A692AE19654BF8004F3791 /* Resources */,
 				2494CC501B57E8EB007C5C18 /* Embed App Extensions */,
+				97C3097B4C257E008A7DCCF5 /* Embed Pods Frameworks */,
+				D15C2FCE2986DCEDE7F6E621 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -462,6 +481,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1E5B70C2161451293DAB147D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		97C3097B4C257E008A7DCCF5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PongDang/Pods-PongDang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15C2FCE2986DCEDE7F6E621 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PongDang/Pods-PongDang-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2494CC3A1B57E8EB007C5C18 /* Sources */ = {
@@ -642,6 +709,7 @@
 		};
 		24A692D419654BF9004F3791 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E91BB4CA14486B71622BB6F /* Pods-PongDang.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -653,7 +721,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.penguin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PongDang;
 				PROVISIONING_PROFILE = "";
@@ -663,6 +734,7 @@
 		};
 		24A692D519654BF9004F3791 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2F6A306072A3A4A37BF8AB /* Pods-PongDang.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -674,7 +746,10 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = "";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"$(inherited)",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.penguin.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = PongDang;
 				PROVISIONING_PROFILE = "";

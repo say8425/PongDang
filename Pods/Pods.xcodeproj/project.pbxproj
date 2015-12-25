@@ -6,43 +6,364 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		02C46E06DE978CC7D0EED96C3F517717 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46B31AA0ABBE66370B65C0A94BDA8493 /* CoreGraphics.framework */; };
+		0528D175A42B482649DB00C8F300F12E /* M13ProgressViewSegmentedBar.h in Headers */ = {isa = PBXBuildFile; fileRef = EAAD2A48F75C6E56F61FECE8541BDDBF /* M13ProgressViewSegmentedBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		073890BD5D11782FEBD6839A69766D1E /* M13ProgressViewStripedBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 72460893BD2AFE7B3C686F342FD227AC /* M13ProgressViewStripedBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0C59F45352AF7FDD61752B97AE1D8E11 /* Pods-PongDang-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 719FA5EC00E3FB5BF2A4CCC58910C227 /* Pods-PongDang-dummy.m */; };
+		0DE9671BE70776C689A724009057A69B /* M13ProgressViewRadiative.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D9D5A8E5446CAB158C62EE2BBDE1C0 /* M13ProgressViewRadiative.m */; };
+		2521109CBFE0E261B203E342DDA98085 /* M13ProgressViewMetro.h in Headers */ = {isa = PBXBuildFile; fileRef = 663FA5985906B0A4C7D9F4DD650EEE3C /* M13ProgressViewMetro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2568050DD444227F239D459714745BC8 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = D8993C89D66E18866B7ED79D342495DB /* UIImage+ImageEffects.m */; };
+		25750206ACA1CD3B0CE7051DEC134745 /* M13ProgressViewMetroDotPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F4B78FF0AEF36EB22ACC50185516EC2 /* M13ProgressViewMetroDotPolygon.m */; };
+		2747A855B41F7B781C91084623E736B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9AEFD4658B22E001760499136EECCC /* Foundation.framework */; };
+		2BDBE71D219129B6132F4FFA181282C3 /* M13ProgressSuite-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5BF980D6EC0EFB5E32B6183B1EBC81C /* M13ProgressSuite-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		31130F36A97917AC5D80DCE167139259 /* M13ProgressViewLetterpress.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AD1A44D3DEB88456274CE34B1FBAFFC /* M13ProgressViewLetterpress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		362EEBE452EC8103F62F456C1B09B85A /* M13ProgressViewFilteredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A33484F255EDCA517249E2488AB8154 /* M13ProgressViewFilteredImage.m */; };
+		3745DCE50B61BC3D69E0ED5ED456AB7F /* M13ProgressViewRadiative.h in Headers */ = {isa = PBXBuildFile; fileRef = 462C664E80B1D3625F94DD428894C189 /* M13ProgressViewRadiative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38FF267CE57B648A780CD45B467A8D64 /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BE67D89AD43147F833EFF24386CEE8BE /* M13ProgressViewBorderedBar.m */; };
+		4143D5E7DD5921CC4500C1BEFE1AC481 /* M13ProgressViewMetroDotPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C3F568BBD78560AD37C8206C4D17D1 /* M13ProgressViewMetroDotPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CD3D0A82AFEE90D3D44B9D683571B7D /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D7343FACB95EF27527A959653F615D3 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4EE0AA60972C52CF40A7721DBCFAC5DE /* M13ProgressViewImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 51CDB8F2FB1237EEFBB5DD98FBE39F1C /* M13ProgressViewImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57140D31D50A2FDE1E26729DDE7CB762 /* M13ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = E844042A43ED236C782A919E1E863DF9 /* M13ProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B8D9A8116350D3D11806789494970FE /* M13ProgressConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = F53A049547D47EA588C8017A82B3B0DE /* M13ProgressConsole.m */; };
+		5D523B47103B3B76E4D6C97CFF6225F4 /* M13ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 0682FC213EBEF32B89584BA7D401713C /* M13ProgressHUD.m */; };
+		5DCDC4216B6EA5ABA3402C4E438D6B21 /* M13ProgressViewSegmentedRing.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC520FF95C466CA37C5FCEEE429DEA0 /* M13ProgressViewSegmentedRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64FD2380B111E42EBDA86EA913D7F0FA /* M13ProgressViewRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED5A262CD62C10AC89D0E00D3119F1A /* M13ProgressViewRing.m */; };
+		6A2892AE6009978029742BFAB8C327FC /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5557E260F2D8E7D0BE65E424AD1EA7FA /* CoreImage.framework */; };
+		74A9AE607F4A46D4A96516558BF5F9ED /* M13ProgressViewStripedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CEB33AA4F25D7C500C40C7F76416C28F /* M13ProgressViewStripedBar.m */; };
+		7CBA9997D12DF9A581A04D40B3796516 /* UINavigationController+M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DBE2D44F21F8B7246CD29A94260A6C /* UINavigationController+M13ProgressViewBar.m */; };
+		7F779224D6E8C0586C247FA15CEADB38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9AEFD4658B22E001760499136EECCC /* Foundation.framework */; };
+		809AC271F911EBB28975D962C82B558F /* Pods-PongDang-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04AF4A87D4437B7841733AD7BB4A0E42 /* Pods-PongDang-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85AC6398326B95C3878F55B7405716AF /* UINavigationController+M13ProgressViewBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BC196EACA06E8966D40D87E91498A6D /* UINavigationController+M13ProgressViewBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8934690DF5B639BE79DDED48FB0B0D27 /* M13ProgressConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = C501A6EABB5F29EA82D5F69A8F82B2D3 /* M13ProgressConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C775768BCEB7E7A34897B6BA3A75BF6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98B03DE073A0E64BB60334F4A71CDE04 /* UIKit.framework */; };
+		999372606798A531AD93C2E87657A40D /* M13ProgressViewMetro.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F3B1BB77B6E727F8611687A1036A78 /* M13ProgressViewMetro.m */; };
+		9A26C91210D96E5F389358C7847861EC /* M13ProgressViewSegmentedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 928F63425F6C714724583317689F2BBF /* M13ProgressViewSegmentedBar.m */; };
+		9ECB66690B3DFA3CC7865AAE73D05AC0 /* M13ProgressViewSegmentedRing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1608B6E48280DD493D777FFA58F839E4 /* M13ProgressViewSegmentedRing.m */; };
+		A3668B6060D746B51A3B9DA5BA03D001 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 72A03E606FF1FF2319E68F2CB74BED70 /* QuartzCore.framework */; };
+		B18D00088135B8BE174FA7DBAE507C0E /* M13ProgressViewLetterpress.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F828629C8545CA8899253F980B77DBA /* M13ProgressViewLetterpress.m */; };
+		BA47EF2D2BDF3AE0AD329E7278F5D9AF /* M13ProgressViewRing.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B3BBEF31FD7B35A2A420D06C0CAC12 /* M13ProgressViewRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BFAAF26E5D1C74C15C8A91DF1B6F24B0 /* M13ProgressViewFilteredImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 0897961A3F01B1A50990E962D164EB40 /* M13ProgressViewFilteredImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C918E9D7D9E42B5CD09967CB9ABCD7D0 /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F0877E33FB7F19FC65F26E737072CB1 /* M13ProgressView.m */; };
+		C96F5CF56A48A460278FC740B0B4F387 /* M13ProgressSuite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 763CF3D68F65E9BA7EAB56A09A3B255E /* M13ProgressSuite-dummy.m */; };
+		CAD4DD191C6751CA77CB7415689CA3EE /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB57CE03B5A0D5D52375C2E7057B37D /* M13ProgressViewImage.m */; };
+		CCBB08C2D78043CEF9315D2ACDF697D0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE58BCE96FA374BAE7C85B4E59C5A8B3 /* Accelerate.framework */; };
+		DB276FD18963C4E08DED2A7C62C61A8B /* M13ProgressViewBorderedBar.h in Headers */ = {isa = PBXBuildFile; fileRef = B6766E6760079579F81641CDC1DE4886 /* M13ProgressViewBorderedBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE4DC25482E99211A23EA94D58B77472 /* M13ProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = D94722C3ACDE4417423D7399BCBB7B82 /* M13ProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED4D3FA32067DCEB814808270DE6DB21 /* M13ProgressViewBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 912BF82876C4E5B5394D6FE4207D3D1B /* M13ProgressViewBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F30AD0FADDE515BC7B6E200FF7BB40C8 /* M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AEDA3258BAABEF378372F509D92AEE /* M13ProgressViewBar.m */; };
+		F33A78500B515C75745761FF69F218CE /* M13ProgressViewPie.h in Headers */ = {isa = PBXBuildFile; fileRef = DB7DE084094BABA3524964AEAA77EA06 /* M13ProgressViewPie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FC129811188EFD9DB040C5F8EB28692D /* M13ProgressViewPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 031111656B3F3ADE67CAE2809ADCF0F2 /* M13ProgressViewPie.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BB03D6DA0150C5ABF43C1398B75D9D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 698A37611B31C6E9B1C5AEC735CECE70;
+			remoteInfo = M13ProgressSuite;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		031111656B3F3ADE67CAE2809ADCF0F2 /* M13ProgressViewPie.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewPie.m; path = Classes/ProgressViews/M13ProgressViewPie.m; sourceTree = "<group>"; };
+		04AF4A87D4437B7841733AD7BB4A0E42 /* Pods-PongDang-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PongDang-umbrella.h"; sourceTree = "<group>"; };
+		04C3F568BBD78560AD37C8206C4D17D1 /* M13ProgressViewMetroDotPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewMetroDotPolygon.h; path = Classes/ProgressViews/M13ProgressViewMetroDotPolygon.h; sourceTree = "<group>"; };
+		0682FC213EBEF32B89584BA7D401713C /* M13ProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressHUD.m; path = Classes/HUD/M13ProgressHUD.m; sourceTree = "<group>"; };
+		0897961A3F01B1A50990E962D164EB40 /* M13ProgressViewFilteredImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewFilteredImage.h; path = Classes/ProgressViews/M13ProgressViewFilteredImage.h; sourceTree = "<group>"; };
+		0F0877E33FB7F19FC65F26E737072CB1 /* M13ProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressView.m; path = Classes/ProgressViews/M13ProgressView.m; sourceTree = "<group>"; };
+		1608B6E48280DD493D777FFA58F839E4 /* M13ProgressViewSegmentedRing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewSegmentedRing.m; path = Classes/ProgressViews/M13ProgressViewSegmentedRing.m; sourceTree = "<group>"; };
+		1ED5A262CD62C10AC89D0E00D3119F1A /* M13ProgressViewRing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewRing.m; path = Classes/ProgressViews/M13ProgressViewRing.m; sourceTree = "<group>"; };
+		3C34C1A8F980BCA13C42DDEBB616B255 /* Pods_PongDang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PongDang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		462C664E80B1D3625F94DD428894C189 /* M13ProgressViewRadiative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewRadiative.h; path = Classes/ProgressViews/M13ProgressViewRadiative.h; sourceTree = "<group>"; };
+		46B31AA0ABBE66370B65C0A94BDA8493 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4A33484F255EDCA517249E2488AB8154 /* M13ProgressViewFilteredImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewFilteredImage.m; path = Classes/ProgressViews/M13ProgressViewFilteredImage.m; sourceTree = "<group>"; };
+		4B9AEFD4658B22E001760499136EECCC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4E48C414E2C9A9926DECCF3A71BAC536 /* Pods-PongDang-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PongDang-resources.sh"; sourceTree = "<group>"; };
+		4F4B78FF0AEF36EB22ACC50185516EC2 /* M13ProgressViewMetroDotPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewMetroDotPolygon.m; path = Classes/ProgressViews/M13ProgressViewMetroDotPolygon.m; sourceTree = "<group>"; };
+		51CDB8F2FB1237EEFBB5DD98FBE39F1C /* M13ProgressViewImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewImage.h; path = Classes/ProgressViews/M13ProgressViewImage.h; sourceTree = "<group>"; };
+		5557E260F2D8E7D0BE65E424AD1EA7FA /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		5BC196EACA06E8966D40D87E91498A6D /* UINavigationController+M13ProgressViewBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+M13ProgressViewBar.h"; path = "Classes/NavigationController/UINavigationController+M13ProgressViewBar.h"; sourceTree = "<group>"; };
+		5F828629C8545CA8899253F980B77DBA /* M13ProgressViewLetterpress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewLetterpress.m; path = Classes/ProgressViews/M13ProgressViewLetterpress.m; sourceTree = "<group>"; };
+		5FC520FF95C466CA37C5FCEEE429DEA0 /* M13ProgressViewSegmentedRing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewSegmentedRing.h; path = Classes/ProgressViews/M13ProgressViewSegmentedRing.h; sourceTree = "<group>"; };
+		61B09CC0EA66CB5B736BE10828D5892A /* Pods-PongDang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PongDang.release.xcconfig"; sourceTree = "<group>"; };
+		63D9D5A8E5446CAB158C62EE2BBDE1C0 /* M13ProgressViewRadiative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewRadiative.m; path = Classes/ProgressViews/M13ProgressViewRadiative.m; sourceTree = "<group>"; };
+		663FA5985906B0A4C7D9F4DD650EEE3C /* M13ProgressViewMetro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewMetro.h; path = Classes/ProgressViews/M13ProgressViewMetro.h; sourceTree = "<group>"; };
+		6AB57CE03B5A0D5D52375C2E7057B37D /* M13ProgressViewImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewImage.m; path = Classes/ProgressViews/M13ProgressViewImage.m; sourceTree = "<group>"; };
+		6AD1A44D3DEB88456274CE34B1FBAFFC /* M13ProgressViewLetterpress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewLetterpress.h; path = Classes/ProgressViews/M13ProgressViewLetterpress.h; sourceTree = "<group>"; };
+		719FA5EC00E3FB5BF2A4CCC58910C227 /* Pods-PongDang-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PongDang-dummy.m"; sourceTree = "<group>"; };
+		72460893BD2AFE7B3C686F342FD227AC /* M13ProgressViewStripedBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewStripedBar.h; path = Classes/ProgressViews/M13ProgressViewStripedBar.h; sourceTree = "<group>"; };
+		72A03E606FF1FF2319E68F2CB74BED70 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		763CF3D68F65E9BA7EAB56A09A3B255E /* M13ProgressSuite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13ProgressSuite-dummy.m"; sourceTree = "<group>"; };
+		7D7343FACB95EF27527A959653F615D3 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Classes/HUD/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		8F2B6CAE934402EF9854B2A28BD65C58 /* M13ProgressSuite.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = M13ProgressSuite.modulemap; sourceTree = "<group>"; };
+		912BF82876C4E5B5394D6FE4207D3D1B /* M13ProgressViewBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewBar.h; path = Classes/ProgressViews/M13ProgressViewBar.h; sourceTree = "<group>"; };
+		928F63425F6C714724583317689F2BBF /* M13ProgressViewSegmentedBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewSegmentedBar.m; path = Classes/ProgressViews/M13ProgressViewSegmentedBar.m; sourceTree = "<group>"; };
+		98B03DE073A0E64BB60334F4A71CDE04 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5DBE2D44F21F8B7246CD29A94260A6C /* UINavigationController+M13ProgressViewBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+M13ProgressViewBar.m"; path = "Classes/NavigationController/UINavigationController+M13ProgressViewBar.m"; sourceTree = "<group>"; };
+		A9AEDA3258BAABEF378372F509D92AEE /* M13ProgressViewBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewBar.m; path = Classes/ProgressViews/M13ProgressViewBar.m; sourceTree = "<group>"; };
+		AB4C8391699FCC2A33369FF330AD6725 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4B3BBEF31FD7B35A2A420D06C0CAC12 /* M13ProgressViewRing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewRing.h; path = Classes/ProgressViews/M13ProgressViewRing.h; sourceTree = "<group>"; };
+		B6766E6760079579F81641CDC1DE4886 /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewBorderedBar.h; path = Classes/ProgressViews/M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BA9B46AEDB63BD013785CD5E44A360B3 /* Pods-PongDang-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PongDang-frameworks.sh"; sourceTree = "<group>"; };
+		BE67D89AD43147F833EFF24386CEE8BE /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewBorderedBar.m; path = Classes/ProgressViews/M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
+		BF9FDD00F09F7A47F1FD751FBA29B74C /* Pods-PongDang-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PongDang-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C501A6EABB5F29EA82D5F69A8F82B2D3 /* M13ProgressConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressConsole.h; path = Classes/Console/M13ProgressConsole.h; sourceTree = "<group>"; };
+		C5BF980D6EC0EFB5E32B6183B1EBC81C /* M13ProgressSuite-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13ProgressSuite-umbrella.h"; sourceTree = "<group>"; };
+		C6FC44DCA3B36D5F447BACBCA0DB24AA /* Pods-PongDang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PongDang.debug.xcconfig"; sourceTree = "<group>"; };
+		C801E3500CCD2CD5534AE0DA763D5FAA /* Pods-PongDang-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PongDang-acknowledgements.plist"; sourceTree = "<group>"; };
+		CEB33AA4F25D7C500C40C7F76416C28F /* M13ProgressViewStripedBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewStripedBar.m; path = Classes/ProgressViews/M13ProgressViewStripedBar.m; sourceTree = "<group>"; };
+		D3FF33CCC422ED4318D6E109845FF2D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8993C89D66E18866B7ED79D342495DB /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Classes/HUD/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		D94722C3ACDE4417423D7399BCBB7B82 /* M13ProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressView.h; path = Classes/ProgressViews/M13ProgressView.h; sourceTree = "<group>"; };
+		DB7DE084094BABA3524964AEAA77EA06 /* M13ProgressViewPie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewPie.h; path = Classes/ProgressViews/M13ProgressViewPie.h; sourceTree = "<group>"; };
+		E2F3B1BB77B6E727F8611687A1036A78 /* M13ProgressViewMetro.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewMetro.m; path = Classes/ProgressViews/M13ProgressViewMetro.m; sourceTree = "<group>"; };
+		E844042A43ED236C782A919E1E863DF9 /* M13ProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressHUD.h; path = Classes/HUD/M13ProgressHUD.h; sourceTree = "<group>"; };
+		EAAD2A48F75C6E56F61FECE8541BDDBF /* M13ProgressViewSegmentedBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewSegmentedBar.h; path = Classes/ProgressViews/M13ProgressViewSegmentedBar.h; sourceTree = "<group>"; };
+		EB9BC4C66438A89966760B70A761172F /* M13ProgressSuite.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = M13ProgressSuite.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEBFA5ACF4AA88E3FA13CFA12E548C4F /* M13ProgressSuite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13ProgressSuite-prefix.pch"; sourceTree = "<group>"; };
+		F0BE126592D0AE16FB63C36005C2EB75 /* Pods-PongDang.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PongDang.modulemap"; sourceTree = "<group>"; };
+		F53A049547D47EA588C8017A82B3B0DE /* M13ProgressConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressConsole.m; path = Classes/Console/M13ProgressConsole.m; sourceTree = "<group>"; };
+		FE58BCE96FA374BAE7C85B4E59C5A8B3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		FED5DB3FAE274AE71663029A7D209737 /* M13ProgressSuite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13ProgressSuite.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXGroup section */
-		09C5E90726D2521A760312DBF50D9358 /* Products */ = {
-			isa = PBXGroup;
-			children = (
+/* Begin PBXFrameworksBuildPhase section */
+		042443A0767B858D1F9D734D8D40B7AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCBB08C2D78043CEF9315D2ACDF697D0 /* Accelerate.framework in Frameworks */,
+				02C46E06DE978CC7D0EED96C3F517717 /* CoreGraphics.framework in Frameworks */,
+				6A2892AE6009978029742BFAB8C327FC /* CoreImage.framework in Frameworks */,
+				7F779224D6E8C0586C247FA15CEADB38 /* Foundation.framework in Frameworks */,
+				A3668B6060D746B51A3B9DA5BA03D001 /* QuartzCore.framework in Frameworks */,
+				8C775768BCEB7E7A34897B6BA3A75BF6 /* UIKit.framework in Frameworks */,
 			);
-			name = Products;
-			sourceTree = "<group>";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+		C47AC50E2B0D802A96FA98FD5BD77135 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2747A855B41F7B781C91084623E736B1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2474D109C7370C0A54BAE7EAD6C584C5 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2474D109C7370C0A54BAE7EAD6C584C5 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FE58BCE96FA374BAE7C85B4E59C5A8B3 /* Accelerate.framework */,
+				46B31AA0ABBE66370B65C0A94BDA8493 /* CoreGraphics.framework */,
+				5557E260F2D8E7D0BE65E424AD1EA7FA /* CoreImage.framework */,
+				4B9AEFD4658B22E001760499136EECCC /* Foundation.framework */,
+				72A03E606FF1FF2319E68F2CB74BED70 /* QuartzCore.framework */,
+				98B03DE073A0E64BB60334F4A71CDE04 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4F09D51E3D8C5A963C2A883D76B8A3DB /* M13ProgressSuite */ = {
+			isa = PBXGroup;
+			children = (
+				C501A6EABB5F29EA82D5F69A8F82B2D3 /* M13ProgressConsole.h */,
+				F53A049547D47EA588C8017A82B3B0DE /* M13ProgressConsole.m */,
+				E844042A43ED236C782A919E1E863DF9 /* M13ProgressHUD.h */,
+				0682FC213EBEF32B89584BA7D401713C /* M13ProgressHUD.m */,
+				D94722C3ACDE4417423D7399BCBB7B82 /* M13ProgressView.h */,
+				0F0877E33FB7F19FC65F26E737072CB1 /* M13ProgressView.m */,
+				912BF82876C4E5B5394D6FE4207D3D1B /* M13ProgressViewBar.h */,
+				A9AEDA3258BAABEF378372F509D92AEE /* M13ProgressViewBar.m */,
+				B6766E6760079579F81641CDC1DE4886 /* M13ProgressViewBorderedBar.h */,
+				BE67D89AD43147F833EFF24386CEE8BE /* M13ProgressViewBorderedBar.m */,
+				0897961A3F01B1A50990E962D164EB40 /* M13ProgressViewFilteredImage.h */,
+				4A33484F255EDCA517249E2488AB8154 /* M13ProgressViewFilteredImage.m */,
+				51CDB8F2FB1237EEFBB5DD98FBE39F1C /* M13ProgressViewImage.h */,
+				6AB57CE03B5A0D5D52375C2E7057B37D /* M13ProgressViewImage.m */,
+				6AD1A44D3DEB88456274CE34B1FBAFFC /* M13ProgressViewLetterpress.h */,
+				5F828629C8545CA8899253F980B77DBA /* M13ProgressViewLetterpress.m */,
+				663FA5985906B0A4C7D9F4DD650EEE3C /* M13ProgressViewMetro.h */,
+				E2F3B1BB77B6E727F8611687A1036A78 /* M13ProgressViewMetro.m */,
+				04C3F568BBD78560AD37C8206C4D17D1 /* M13ProgressViewMetroDotPolygon.h */,
+				4F4B78FF0AEF36EB22ACC50185516EC2 /* M13ProgressViewMetroDotPolygon.m */,
+				DB7DE084094BABA3524964AEAA77EA06 /* M13ProgressViewPie.h */,
+				031111656B3F3ADE67CAE2809ADCF0F2 /* M13ProgressViewPie.m */,
+				462C664E80B1D3625F94DD428894C189 /* M13ProgressViewRadiative.h */,
+				63D9D5A8E5446CAB158C62EE2BBDE1C0 /* M13ProgressViewRadiative.m */,
+				B4B3BBEF31FD7B35A2A420D06C0CAC12 /* M13ProgressViewRing.h */,
+				1ED5A262CD62C10AC89D0E00D3119F1A /* M13ProgressViewRing.m */,
+				EAAD2A48F75C6E56F61FECE8541BDDBF /* M13ProgressViewSegmentedBar.h */,
+				928F63425F6C714724583317689F2BBF /* M13ProgressViewSegmentedBar.m */,
+				5FC520FF95C466CA37C5FCEEE429DEA0 /* M13ProgressViewSegmentedRing.h */,
+				1608B6E48280DD493D777FFA58F839E4 /* M13ProgressViewSegmentedRing.m */,
+				72460893BD2AFE7B3C686F342FD227AC /* M13ProgressViewStripedBar.h */,
+				CEB33AA4F25D7C500C40C7F76416C28F /* M13ProgressViewStripedBar.m */,
+				7D7343FACB95EF27527A959653F615D3 /* UIImage+ImageEffects.h */,
+				D8993C89D66E18866B7ED79D342495DB /* UIImage+ImageEffects.m */,
+				5BC196EACA06E8966D40D87E91498A6D /* UINavigationController+M13ProgressViewBar.h */,
+				A5DBE2D44F21F8B7246CD29A94260A6C /* UINavigationController+M13ProgressViewBar.m */,
+				903D53EEEEB7EC18C585E7EEC39652CE /* Support Files */,
+			);
+			path = M13ProgressSuite;
+			sourceTree = "<group>";
+		};
+		68AE1390AA456387E15989BCB26DAF5D /* Pods-PongDang */ = {
+			isa = PBXGroup;
+			children = (
+				D3FF33CCC422ED4318D6E109845FF2D2 /* Info.plist */,
+				F0BE126592D0AE16FB63C36005C2EB75 /* Pods-PongDang.modulemap */,
+				BF9FDD00F09F7A47F1FD751FBA29B74C /* Pods-PongDang-acknowledgements.markdown */,
+				C801E3500CCD2CD5534AE0DA763D5FAA /* Pods-PongDang-acknowledgements.plist */,
+				719FA5EC00E3FB5BF2A4CCC58910C227 /* Pods-PongDang-dummy.m */,
+				BA9B46AEDB63BD013785CD5E44A360B3 /* Pods-PongDang-frameworks.sh */,
+				4E48C414E2C9A9926DECCF3A71BAC536 /* Pods-PongDang-resources.sh */,
+				04AF4A87D4437B7841733AD7BB4A0E42 /* Pods-PongDang-umbrella.h */,
+				C6FC44DCA3B36D5F447BACBCA0DB24AA /* Pods-PongDang.debug.xcconfig */,
+				61B09CC0EA66CB5B736BE10828D5892A /* Pods-PongDang.release.xcconfig */,
+			);
+			name = "Pods-PongDang";
+			path = "Target Support Files/Pods-PongDang";
+			sourceTree = "<group>";
+		};
+		75177DDB5E894852429410DF7E1E408A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68AE1390AA456387E15989BCB26DAF5D /* Pods-PongDang */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
-				09C5E90726D2521A760312DBF50D9358 /* Products */,
-				F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				9A1F552B55721A83C2FD220ABCCF9E0F /* Pods */,
+				EF66726CCEFB321A89A31B37FFE168BF /* Products */,
+				75177DDB5E894852429410DF7E1E408A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F6CCA5D896907CE7506C37FD31FC265A /* Targets Support Files */ = {
+		903D53EEEEB7EC18C585E7EEC39652CE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB4C8391699FCC2A33369FF330AD6725 /* Info.plist */,
+				8F2B6CAE934402EF9854B2A28BD65C58 /* M13ProgressSuite.modulemap */,
+				FED5DB3FAE274AE71663029A7D209737 /* M13ProgressSuite.xcconfig */,
+				763CF3D68F65E9BA7EAB56A09A3B255E /* M13ProgressSuite-dummy.m */,
+				EEBFA5ACF4AA88E3FA13CFA12E548C4F /* M13ProgressSuite-prefix.pch */,
+				C5BF980D6EC0EFB5E32B6183B1EBC81C /* M13ProgressSuite-umbrella.h */,
 			);
-			name = "Targets Support Files";
+			name = "Support Files";
+			path = "../Target Support Files/M13ProgressSuite";
+			sourceTree = "<group>";
+		};
+		9A1F552B55721A83C2FD220ABCCF9E0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F09D51E3D8C5A963C2A883D76B8A3DB /* M13ProgressSuite */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF66726CCEFB321A89A31B37FFE168BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB9BC4C66438A89966760B70A761172F /* M13ProgressSuite.framework */,
+				3C34C1A8F980BCA13C42DDEBB616B255 /* Pods_PongDang.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0A6862B4CC8A36D89BBA6C40A787D82E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				809AC271F911EBB28975D962C82B558F /* Pods-PongDang-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B5A31BB2DD04A255BA8615DBF1F1318 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8934690DF5B639BE79DDED48FB0B0D27 /* M13ProgressConsole.h in Headers */,
+				57140D31D50A2FDE1E26729DDE7CB762 /* M13ProgressHUD.h in Headers */,
+				2BDBE71D219129B6132F4FFA181282C3 /* M13ProgressSuite-umbrella.h in Headers */,
+				DE4DC25482E99211A23EA94D58B77472 /* M13ProgressView.h in Headers */,
+				ED4D3FA32067DCEB814808270DE6DB21 /* M13ProgressViewBar.h in Headers */,
+				DB276FD18963C4E08DED2A7C62C61A8B /* M13ProgressViewBorderedBar.h in Headers */,
+				BFAAF26E5D1C74C15C8A91DF1B6F24B0 /* M13ProgressViewFilteredImage.h in Headers */,
+				4EE0AA60972C52CF40A7721DBCFAC5DE /* M13ProgressViewImage.h in Headers */,
+				31130F36A97917AC5D80DCE167139259 /* M13ProgressViewLetterpress.h in Headers */,
+				2521109CBFE0E261B203E342DDA98085 /* M13ProgressViewMetro.h in Headers */,
+				4143D5E7DD5921CC4500C1BEFE1AC481 /* M13ProgressViewMetroDotPolygon.h in Headers */,
+				F33A78500B515C75745761FF69F218CE /* M13ProgressViewPie.h in Headers */,
+				3745DCE50B61BC3D69E0ED5ED456AB7F /* M13ProgressViewRadiative.h in Headers */,
+				BA47EF2D2BDF3AE0AD329E7278F5D9AF /* M13ProgressViewRing.h in Headers */,
+				0528D175A42B482649DB00C8F300F12E /* M13ProgressViewSegmentedBar.h in Headers */,
+				5DCDC4216B6EA5ABA3402C4E438D6B21 /* M13ProgressViewSegmentedRing.h in Headers */,
+				073890BD5D11782FEBD6839A69766D1E /* M13ProgressViewStripedBar.h in Headers */,
+				4CD3D0A82AFEE90D3D44B9D683571B7D /* UIImage+ImageEffects.h in Headers */,
+				85AC6398326B95C3878F55B7405716AF /* UINavigationController+M13ProgressViewBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		698A37611B31C6E9B1C5AEC735CECE70 /* M13ProgressSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB092D934938AFF8ACFD47C8E643F5CD /* Build configuration list for PBXNativeTarget "M13ProgressSuite" */;
+			buildPhases = (
+				C28AB120A9DC0B718D2BFCC46975F948 /* Sources */,
+				042443A0767B858D1F9D734D8D40B7AF /* Frameworks */,
+				9B5A31BB2DD04A255BA8615DBF1F1318 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M13ProgressSuite;
+			productName = M13ProgressSuite;
+			productReference = EB9BC4C66438A89966760B70A761172F /* M13ProgressSuite.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		770C9FC8AAA539C762099F99E47689AB /* Pods-PongDang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD53E05DBB39D89094AC8385FAC3607D /* Build configuration list for PBXNativeTarget "Pods-PongDang" */;
+			buildPhases = (
+				03077C84ADDE053D13463CEFFDBFE8C6 /* Sources */,
+				C47AC50E2B0D802A96FA98FD5BD77135 /* Frameworks */,
+				0A6862B4CC8A36D89BBA6C40A787D82E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E92CE7A2188028B040088653DCF025 /* PBXTargetDependency */,
+			);
+			name = "Pods-PongDang";
+			productName = "Pods-PongDang";
+			productReference = 3C34C1A8F980BCA13C42DDEBB616B255 /* Pods_PongDang.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
@@ -59,13 +380,61 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09C5E90726D2521A760312DBF50D9358 /* Products */;
+			productRefGroup = EF66726CCEFB321A89A31B37FFE168BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				698A37611B31C6E9B1C5AEC735CECE70 /* M13ProgressSuite */,
+				770C9FC8AAA539C762099F99E47689AB /* Pods-PongDang */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03077C84ADDE053D13463CEFFDBFE8C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C59F45352AF7FDD61752B97AE1D8E11 /* Pods-PongDang-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C28AB120A9DC0B718D2BFCC46975F948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8D9A8116350D3D11806789494970FE /* M13ProgressConsole.m in Sources */,
+				5D523B47103B3B76E4D6C97CFF6225F4 /* M13ProgressHUD.m in Sources */,
+				C96F5CF56A48A460278FC740B0B4F387 /* M13ProgressSuite-dummy.m in Sources */,
+				C918E9D7D9E42B5CD09967CB9ABCD7D0 /* M13ProgressView.m in Sources */,
+				F30AD0FADDE515BC7B6E200FF7BB40C8 /* M13ProgressViewBar.m in Sources */,
+				38FF267CE57B648A780CD45B467A8D64 /* M13ProgressViewBorderedBar.m in Sources */,
+				362EEBE452EC8103F62F456C1B09B85A /* M13ProgressViewFilteredImage.m in Sources */,
+				CAD4DD191C6751CA77CB7415689CA3EE /* M13ProgressViewImage.m in Sources */,
+				B18D00088135B8BE174FA7DBAE507C0E /* M13ProgressViewLetterpress.m in Sources */,
+				999372606798A531AD93C2E87657A40D /* M13ProgressViewMetro.m in Sources */,
+				25750206ACA1CD3B0CE7051DEC134745 /* M13ProgressViewMetroDotPolygon.m in Sources */,
+				FC129811188EFD9DB040C5F8EB28692D /* M13ProgressViewPie.m in Sources */,
+				0DE9671BE70776C689A724009057A69B /* M13ProgressViewRadiative.m in Sources */,
+				64FD2380B111E42EBDA86EA913D7F0FA /* M13ProgressViewRing.m in Sources */,
+				9A26C91210D96E5F389358C7847861EC /* M13ProgressViewSegmentedBar.m in Sources */,
+				9ECB66690B3DFA3CC7865AAE73D05AC0 /* M13ProgressViewSegmentedRing.m in Sources */,
+				74A9AE607F4A46D4A96516558BF5F9ED /* M13ProgressViewStripedBar.m in Sources */,
+				2568050DD444227F239D459714745BC8 /* UIImage+ImageEffects.m in Sources */,
+				7CBA9997D12DF9A581A04D40B3796516 /* UINavigationController+M13ProgressViewBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E92CE7A2188028B040088653DCF025 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13ProgressSuite;
+			target = 698A37611B31C6E9B1C5AEC735CECE70 /* M13ProgressSuite */;
+			targetProxy = 9BB03D6DA0150C5ABF43C1398B75D9D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		052A17875CB827423D627183396CEB60 /* Release */ = {
@@ -101,6 +470,120 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		0641EA65E18332097563EBBC0A2E9F10 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6FC44DCA3B36D5F447BACBCA0DB24AA /* Pods-PongDang.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PongDang/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PongDang/Pods-PongDang.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PongDang;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C1109D88C04DF9F511115BE84AF288B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED5DB3FAE274AE71663029A7D209737 /* M13ProgressSuite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M13ProgressSuite/M13ProgressSuite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13ProgressSuite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/M13ProgressSuite/M13ProgressSuite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = M13ProgressSuite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		640E9882F9C15A1884353A20FCCDAA16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61B09CC0EA66CB5B736BE10828D5892A /* Pods-PongDang.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PongDang/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PongDang/Pods-PongDang.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PongDang;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		67B50E373D013C5B92F6892FFC5A2919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FED5DB3FAE274AE71663029A7D209737 /* M13ProgressSuite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M13ProgressSuite/M13ProgressSuite-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/M13ProgressSuite/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/M13ProgressSuite/M13ProgressSuite.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = M13ProgressSuite;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -149,6 +632,24 @@
 			buildConfigurations = (
 				B37F0F91F85060E28F1DAAB522DC7EC1 /* Debug */,
 				052A17875CB827423D627183396CEB60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB092D934938AFF8ACFD47C8E643F5CD /* Build configuration list for PBXNativeTarget "M13ProgressSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				67B50E373D013C5B92F6892FFC5A2919 /* Debug */,
+				1C1109D88C04DF9F511115BE84AF288B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DD53E05DBB39D89094AC8385FAC3607D /* Build configuration list for PBXNativeTarget "Pods-PongDang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0641EA65E18332097563EBBC0A2E9F10 /* Debug */,
+				640E9882F9C15A1884353A20FCCDAA16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

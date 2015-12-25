@@ -1,1 +1,10 @@
+PODS:
+  - M13ProgressSuite (1.2.7)
+
+DEPENDENCIES:
+  - M13ProgressSuite (~> 1.2)
+
+SPEC CHECKSUMS:
+  M13ProgressSuite: 03d194af6359da440641ba758aed5a18b0386a86
+
 COCOAPODS: 0.39.0
