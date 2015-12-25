@@ -13,13 +13,14 @@
     NSURLConnection *currentConnection;
 }
 @property (strong, nonatomic) IBOutlet UIView *mainView;
-@property (strong, nonatomic) IBOutlet UILabel *tempLabel;
 @property (retain, nonatomic) NSMutableData *apiReturnData;
 @property (strong, nonatomic) IBOutlet UILabel *nowHanGang;
 @property (assign, nonatomic) float temp;
+@property (strong, nonatomic) IBOutlet UIButton *tempLoad;
 
 - (IBAction)exportButton:(id)sender;
 - (IBAction)whoButton:(id)sender;
+- (IBAction)tempLoad:(id)sender;
 
 @end
 

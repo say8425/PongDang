@@ -61,7 +61,8 @@
                               NSForegroundColorAttributeName:[UIColor lightGrayColor]} range:NSMakeRange(0, [tempUnit length])];
     [tempText appendAttributedString:tempUnit];
     
-    self.tempLabel.attributedText = tempText;
+    [self.tempLoad setAttributedTitle:tempText forState:UIControlStateNormal];
+
     currentConnection = nil;
 }
 
@@ -83,6 +84,9 @@
 }
 
 - (IBAction)whoButton:(id)sender {
+}
+
+- (IBAction)tempLoad:(id)sender {
 }
 
 @end

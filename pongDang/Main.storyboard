@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="NanumMyeongjo.otf">
@@ -53,13 +54,6 @@
                                     <segue destination="YnG-YR-BPM" kind="custom" customClass="whoMakeItSegue" id="KoV-ho-MXj"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999964" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dropWater.png" translatesAutoresizingMaskIntoConstraints="NO" id="yif-aL-sM8" userLabel="dropWater.png">
-                                <rect key="frame" x="248" y="196" width="105" height="170"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="170" id="MYi-HF-6FI"/>
-                                    <constraint firstAttribute="width" constant="105" id="lou-Ht-a67"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지    금    한    강    은" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xl5-YI-Rv5">
                                 <rect key="frame" x="198" y="80" width="204" height="45"/>
                                 <constraints>
@@ -70,39 +64,48 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="측정중" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0d-uz-6kB">
-                                <rect key="frame" x="262" y="279" width="77" height="42"/>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Die-wR-CGY" userLabel="tempLoad">
+                                <rect key="frame" x="248" y="196" width="105" height="170"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="EH7-qz-zFa"/>
-                                    <constraint firstAttribute="width" constant="77" id="oQm-nJ-rSJ"/>
+                                    <constraint firstAttribute="height" constant="170" id="Vfg-f8-bhH"/>
+                                    <constraint firstAttribute="width" constant="105" id="Zop-xK-Z4h"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <color key="textColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.95686274509803926" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" backgroundImage="dropWater.png"/>
+                                <connections>
+                                    <action selector="tempLoad:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4hi-Zk-lSl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JOI-7V-RAb" secondAttribute="trailing" constant="2" id="1lr-DI-Rgb"/>
+                            <constraint firstItem="Die-wR-CGY" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" constant="-19" id="5gJ-Ul-Z68"/>
                             <constraint firstItem="Xl5-YI-Rv5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="80" id="DJd-sS-wII"/>
-                            <constraint firstItem="Y0d-uz-6kB" firstAttribute="bottom" secondItem="yif-aL-sM8" secondAttribute="bottom" constant="-45" id="SEG-qa-7sd"/>
                             <constraint firstItem="C6h-4a-ds2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="6" id="SZX-br-YkL"/>
                             <constraint firstAttribute="trailing" secondItem="2jI-Ow-bP8" secondAttribute="trailing" id="VXt-Q7-QdG"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JOI-7V-RAb" secondAttribute="bottom" constant="2" id="WY6-X1-2xL"/>
-                            <constraint firstItem="yif-aL-sM8" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" constant="-19" id="f1s-QL-bgA"/>
+                            <constraint firstItem="Die-wR-CGY" firstAttribute="centerX" secondItem="2jI-Ow-bP8" secondAttribute="centerX" id="ddP-oz-vvd"/>
                             <constraint firstItem="2jI-Ow-bP8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gXU-F6-ahN"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="C6h-4a-ds2" secondAttribute="bottom" constant="3" id="gpg-xj-9mG"/>
                             <constraint firstItem="2jI-Ow-bP8" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="iZR-2a-fw5"/>
                             <constraint firstItem="2jI-Ow-bP8" firstAttribute="centerX" secondItem="Xl5-YI-Rv5" secondAttribute="centerX" id="jOJ-Lo-KQB"/>
+                            <constraint firstItem="Die-wR-CGY" firstAttribute="width" secondItem="2jI-Ow-bP8" secondAttribute="height" multiplier="7:40" id="kkM-bh-PMq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2jI-Ow-bP8" secondAttribute="bottom" id="mUA-b9-cnf"/>
-                            <constraint firstAttribute="centerX" secondItem="Y0d-uz-6kB" secondAttribute="centerX" id="wWv-Sk-f8m"/>
-                            <constraint firstItem="yif-aL-sM8" firstAttribute="centerX" secondItem="2jI-Ow-bP8" secondAttribute="centerX" constant="0.5" id="xru-vN-WUn"/>
+                            <constraint firstItem="Die-wR-CGY" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" id="sBr-AD-97m"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="kkM-bh-PMq"/>
+                                <exclude reference="sBr-AD-97m"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="mainView" destination="kh9-bI-dsS" id="mpB-zC-Exx"/>
                         <outlet property="nowHanGang" destination="Xl5-YI-Rv5" id="Fo5-0g-ABG"/>
-                        <outlet property="tempLabel" destination="Y0d-uz-6kB" id="99m-Ln-d8O"/>
+                        <outlet property="tempLoad" destination="Die-wR-CGY" id="Wi1-aX-uRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
