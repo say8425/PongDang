@@ -371,6 +371,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					698A37611B31C6E9B1C5AEC735CECE70 = {
+						DevelopmentTeam = GLF72AFEW2;
+					};
+					770C9FC8AAA539C762099F99E47689AB = {
+						DevelopmentTeam = GLF72AFEW2;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -475,6 +483,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C6FC44DCA3B36D5F447BACBCA0DB24AA /* Pods-PongDang.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -505,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FED5DB3FAE274AE71663029A7D209737 /* M13ProgressSuite.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -532,6 +542,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61B09CC0EA66CB5B736BE10828D5892A /* Pods-PongDang.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -562,6 +573,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FED5DB3FAE274AE71663029A7D209737 /* M13ProgressSuite.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
