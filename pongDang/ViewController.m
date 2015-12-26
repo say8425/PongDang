@@ -72,7 +72,7 @@
 
 - (IBAction)exportButton:(id)sender {
     if (![self presentedViewController]) {
-        NSString *tempStringExport = [NSString stringWithFormat:@"현재 한강 수온은 %.1f입니다.", self.temp];
+        NSString *tempStringExport = [NSString stringWithFormat:@"친구야 한강가자! 지금 수온 %.1f래~", self.temp];
         KakaoLink *kakaoLink = [KakaoLink new];
 
         UIActivityViewController *exportController = [[UIActivityViewController alloc]initWithActivityItems:@[tempStringExport]
