@@ -32,6 +32,15 @@
     } 
     currentConnection = [[NSURLConnection alloc]initWithRequest:tempRequest delegate:self];
     self.apiReturnData = [NSMutableData data];
+    
+#pragma mark - tempLoadButton Selected State
+    UIImage *highlightImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.4f];
+    UIImage *normalImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.6f];
+    UIImage *selectedImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.0f];
+
+    [self.tempLoad setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
+    [self.tempLoad setBackgroundImage:normalImage forState:UIControlStateNormal];
+    [self.tempLoad setBackgroundImage:selectedImage forState:UIControlStateSelected];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -66,10 +75,8 @@
     currentConnection = nil;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (IBAction)tempLoad:(id)sender {
 }
-
 
 - (IBAction)exportButton:(id)sender {
     if (![self presentedViewController]) {
@@ -86,7 +93,20 @@
 - (IBAction)whoButton:(id)sender {
 }
 
-- (IBAction)tempLoad:(id)sender {
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+}
+
+- (UIImage *)translucentImageFromImage:(UIImage *)image withAlpha:(CGFloat)alpha {
+    CGRect rect = CGRectZero;
+    rect.size = image.size;
+    
+    UIGraphicsBeginImageContext(image.size);
+    [image drawInRect:rect blendMode:kCGBlendModeScreen alpha:alpha];
+    UIImage * translucentImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return translucentImage;
 }
 
 @end
