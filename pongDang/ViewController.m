@@ -20,9 +20,8 @@
     self.nowHanGang.font = [UIFont fontWithName:@"NanumMyeongjoOTF" size:20];
 
     [self setTempLoadForState];
-    [self progressViewSetting];
+    [self setProgressView];
     [self getTempStart];
-
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -53,7 +52,7 @@
     [tempText appendAttributedString:tempUnit];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.84 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
-        [self getTempStartEnd:tempText];
+        [self getTempEnd:tempText];
     });
 }
 
@@ -90,31 +89,10 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - Custom Function for ProgressView
-- (UIImage *)translucentImageFromImage:(UIImage *)image withAlpha:(CGFloat)alpha {
-    CGRect rect = CGRectZero;
-    rect.size = image.size;
-    
-    UIGraphicsBeginImageContext(image.size);
-    [image drawInRect:rect blendMode:kCGBlendModeScreen alpha:alpha];
-    UIImage * translucentImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    
-    return translucentImage;
-}
-
-- (void)progressViewSetting {
+#pragma mark - Setting for progressView and tempLoadButton
+- (void)setProgressView {
     [self.progressView setSecondaryColor:[self colorFromHexString:@"#D3DBDE"]];
     [self.progressView setShowPercentage:NO];
-    //    [self.progressView setBackgroundRingWidth:1.0f];
-}
-
-- (UIColor *)colorFromHexString:(NSString *)hexString {
-    unsigned rgbValue = 0;
-    NSScanner *scanner = [NSScanner scannerWithString:hexString];
-    [scanner setScanLocation:1]; // bypass '#' character
-    [scanner scanHexInt:&rgbValue];
-    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
 - (void)setTempLoadForState {
@@ -127,7 +105,7 @@
     [self.tempLoad setBackgroundImage:selectedImage forState:UIControlStateSelected];
 }
 
-#pragma mark - Start get temperature
+#pragma mark - Start End get temperature
 - (void)getTempStart {
     [self.progressView setIndeterminate:YES];
     NSURL *tempURL = [NSURL URLWithString:@"http://hangang.dkserver.wo.tc"];
@@ -142,10 +120,31 @@
     self.apiReturnData = [NSMutableData data];
 }
 
-- (void)getTempStartEnd:(NSMutableAttributedString *)tempText {
+- (void)getTempEnd:(NSMutableAttributedString *)tempText {
     [self.tempLoad setAttributedTitle:tempText forState:UIControlStateNormal];
     [self.progressView setHidden:YES];
     currentConnection = nil;
+}
+
+#pragma mark - Custom Function
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+
+- (UIImage *)translucentImageFromImage:(UIImage *)image withAlpha:(CGFloat)alpha {
+    CGRect rect = CGRectZero;
+    rect.size = image.size;
+    
+    UIGraphicsBeginImageContext(image.size);
+    [image drawInRect:rect blendMode:kCGBlendModeScreen alpha:alpha];
+    UIImage * translucentImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return translucentImage;
 }
 
 @end
