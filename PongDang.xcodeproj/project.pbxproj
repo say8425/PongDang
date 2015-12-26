@@ -43,6 +43,7 @@
 		24D7A4441B3FE9F4006CE87C /* keyboardIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4421B3FE9F4006CE87C /* keyboardIcon@3x.png */; };
 		24D7A4451B3FE9F4006CE87C /* keyboardIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24D7A4431B3FE9F4006CE87C /* keyboardIcon@2x.png */; };
 		24DC25AA19817B7900464996 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24DC25A919817B7900464996 /* Main.storyboard */; };
+		AA48F7DA1C2E7D01002AA468 /* M13ProgressSuite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA48F7D91C2E7D01002AA468 /* M13ProgressSuite.framework */; };
 		AAC9206D1BB337570009C69A /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +143,7 @@
 		924FE6992D0AD527FFE859E8 /* Pods_PongDang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PongDang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA0750131BB81BA100ED55D3 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA2F6A306072A3A4A37BF8AB /* Pods-PongDang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PongDang.release.xcconfig"; path = "Pods/Target Support Files/Pods-PongDang/Pods-PongDang.release.xcconfig"; sourceTree = "<group>"; };
+		AA48F7D91C2E7D01002AA468 /* M13ProgressSuite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = M13ProgressSuite.framework; path = "Pods/../build/Debug-iphoneos/M13ProgressSuite.framework"; sourceTree = "<group>"; };
 		AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAC9206D1BB337570009C69A /* KakaoOpenSDK.framework in Frameworks */,
+				AA48F7DA1C2E7D01002AA468 /* M13ProgressSuite.framework in Frameworks */,
 				20EA71B8D292BD02A5EE2128 /* Pods_PongDang.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +179,7 @@
 		2494CC3F1B57E8EB007C5C18 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AA48F7D91C2E7D01002AA468 /* M13ProgressSuite.framework */,
 				AAC9206C1BB337570009C69A /* KakaoOpenSDK.framework */,
 				2494CC401B57E8EB007C5C18 /* NotificationCenter.framework */,
 				924FE6992D0AD527FFE859E8 /* Pods_PongDang.framework */,
@@ -716,7 +720,10 @@
 				CODE_SIGN_ENTITLEMENTS = PongDang/PongDang.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -741,7 +748,10 @@
 				CODE_SIGN_ENTITLEMENTS = PongDang/PongDang.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = pongDang/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

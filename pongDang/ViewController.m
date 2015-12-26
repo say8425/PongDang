@@ -17,30 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    //[self setModalPresentationStyle:UIModalPresentationCurrentContext];
     self.nowHanGang.font = [UIFont fontWithName:@"NanumMyeongjoOTF" size:20];
 
-#pragma mark - Communication ready
+    [self setTempLoadForState];
+    [self progressViewSetting];
+    [self getTempStart];
 
-    NSURL *tempURL = [NSURL URLWithString:@"http://hangang.dkserver.wo.tc"];
-    NSURLRequest *tempRequest = [NSURLRequest requestWithURL:tempURL];
-
-    if (currentConnection) {
-        [currentConnection cancel];
-        currentConnection = nil;
-        self.apiReturnData = nil;
-    } 
-    currentConnection = [[NSURLConnection alloc]initWithRequest:tempRequest delegate:self];
-    self.apiReturnData = [NSMutableData data];
-    
-#pragma mark - tempLoadButton Selected State
-    UIImage *highlightImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.4f];
-    UIImage *normalImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.6f];
-    UIImage *selectedImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.0f];
-
-    [self.tempLoad setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
-    [self.tempLoad setBackgroundImage:normalImage forState:UIControlStateNormal];
-    [self.tempLoad setBackgroundImage:selectedImage forState:UIControlStateSelected];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
@@ -71,11 +53,13 @@
     [tempText appendAttributedString:tempUnit];
     
     [self.tempLoad setAttributedTitle:tempText forState:UIControlStateNormal];
-
+    [self.progressView setHidden:YES];
     currentConnection = nil;
 }
 
 - (IBAction)tempLoad:(id)sender {
+    [self.progressView setHidden:NO];
+    [self getTempStart];
 }
 
 - (IBAction)exportButton:(id)sender {
@@ -97,6 +81,7 @@
     [super didReceiveMemoryWarning];
 }
 
+#pragma mark - Custom Fuction
 - (UIImage *)translucentImageFromImage:(UIImage *)image withAlpha:(CGFloat)alpha {
     CGRect rect = CGRectZero;
     rect.size = image.size;
@@ -107,6 +92,44 @@
     UIGraphicsEndImageContext();
     
     return translucentImage;
+}
+
+- (void)progressViewSetting {
+    [self.progressView setSecondaryColor:[self colorFromHexString:@"#D3DBDE"]];
+    [self.progressView setShowPercentage:NO];
+    //    [self.progressView setBackgroundRingWidth:1.0f];
+}
+
+- (UIColor *)colorFromHexString:(NSString *)hexString {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:hexString];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+
+- (void)getTempStart {
+    [self.progressView setIndeterminate:YES];
+    NSURL *tempURL = [NSURL URLWithString:@"http://hangang.dkserver.wo.tc"];
+    NSURLRequest *tempRequest = [NSURLRequest requestWithURL:tempURL];
+    
+    if (currentConnection) {
+        [currentConnection cancel];
+        currentConnection = nil;
+        self.apiReturnData = nil;
+    }
+    currentConnection = [[NSURLConnection alloc]initWithRequest:tempRequest delegate:self];
+    self.apiReturnData = [NSMutableData data];
+}
+
+- (void)setTempLoadForState {
+    UIImage *highlightImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.4f];
+    UIImage *normalImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.6f];
+    UIImage *selectedImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.0f];
+    
+    [self.tempLoad setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
+    [self.tempLoad setBackgroundImage:normalImage forState:UIControlStateNormal];
+    [self.tempLoad setBackgroundImage:selectedImage forState:UIControlStateSelected];
 }
 
 @end

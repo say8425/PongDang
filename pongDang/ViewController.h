@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "M13ProgressViewRing.h"
 #import "KakaoLink.h"
 
 @interface ViewController : UIViewController <NSURLConnectionDelegate, NSURLConnectionDataDelegate> {
@@ -17,6 +18,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *nowHanGang;
 @property (assign, nonatomic) float temp;
 @property (strong, nonatomic) IBOutlet UIButton *tempLoad;
+@property (retain, nonatomic) IBOutlet M13ProgressViewRing *progressView;
 
 - (IBAction)exportButton:(id)sender;
 - (IBAction)whoButton:(id)sender;

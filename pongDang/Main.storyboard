@@ -64,6 +64,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2P-zo-6Gz" customClass="M13ProgressViewRing">
+                                <rect key="frame" x="180" y="161" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="In7-kx-3l0"/>
+                                    <constraint firstAttribute="height" constant="240" id="djC-3L-bgP"/>
+                                </constraints>
+                            </view>
                             <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Die-wR-CGY" userLabel="tempLoad">
                                 <rect key="frame" x="248" y="196" width="105" height="170"/>
                                 <constraints>
@@ -83,6 +90,7 @@
                             <constraint firstAttribute="trailing" secondItem="JOI-7V-RAb" secondAttribute="trailing" constant="2" id="1lr-DI-Rgb"/>
                             <constraint firstItem="Die-wR-CGY" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" constant="-19" id="5gJ-Ul-Z68"/>
                             <constraint firstItem="Xl5-YI-Rv5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="80" id="DJd-sS-wII"/>
+                            <constraint firstItem="A2P-zo-6Gz" firstAttribute="width" secondItem="2jI-Ow-bP8" secondAttribute="height" multiplier="2:5" id="IT6-qM-qKh"/>
                             <constraint firstItem="C6h-4a-ds2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="6" id="SZX-br-YkL"/>
                             <constraint firstAttribute="trailing" secondItem="2jI-Ow-bP8" secondAttribute="trailing" id="VXt-Q7-QdG"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JOI-7V-RAb" secondAttribute="bottom" constant="2" id="WY6-X1-2xL"/>
@@ -93,10 +101,13 @@
                             <constraint firstItem="2jI-Ow-bP8" firstAttribute="centerX" secondItem="Xl5-YI-Rv5" secondAttribute="centerX" id="jOJ-Lo-KQB"/>
                             <constraint firstItem="Die-wR-CGY" firstAttribute="width" secondItem="2jI-Ow-bP8" secondAttribute="height" multiplier="7:40" id="kkM-bh-PMq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2jI-Ow-bP8" secondAttribute="bottom" id="mUA-b9-cnf"/>
+                            <constraint firstItem="A2P-zo-6Gz" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" constant="-19" id="ptp-uj-Qh8"/>
+                            <constraint firstItem="A2P-zo-6Gz" firstAttribute="centerX" secondItem="2jI-Ow-bP8" secondAttribute="centerX" id="qFL-tG-wB1"/>
                             <constraint firstItem="Die-wR-CGY" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" id="sBr-AD-97m"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="IT6-qM-qKh"/>
                                 <exclude reference="kkM-bh-PMq"/>
                                 <exclude reference="sBr-AD-97m"/>
                             </mask>
@@ -105,12 +116,13 @@
                     <connections>
                         <outlet property="mainView" destination="kh9-bI-dsS" id="mpB-zC-Exx"/>
                         <outlet property="nowHanGang" destination="Xl5-YI-Rv5" id="Fo5-0g-ABG"/>
+                        <outlet property="progressView" destination="A2P-zo-6Gz" id="Y05-D1-e4M"/>
                         <outlet property="tempLoad" destination="Die-wR-CGY" id="Wi1-aX-uRF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="371.25" y="-217.6056338028169"/>
+            <point key="canvasLocation" x="371" y="-218"/>
         </scene>
         <!--Who Make It View Controller-->
         <scene sceneID="SGq-A3-3gu">
