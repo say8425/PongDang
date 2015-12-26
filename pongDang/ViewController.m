@@ -58,11 +58,7 @@
 
 - (IBAction)tempLoad:(id)sender {
     NSMutableAttributedString *waitingText = [[NSMutableAttributedString alloc]initWithString:@"측정중"];
-    NSMutableAttributedString *waitingTextEnd = [[NSMutableAttributedString alloc]initWithString:@"이에요"];
-    NSMutableAttributedString *nextLine = [[NSMutableAttributedString alloc]initWithString:@"\n"];
-    [waitingText appendAttributedString:nextLine];
-    [waitingText appendAttributedString:waitingTextEnd];
-    [waitingText setAttributes:@{NSFontAttributeName:[UIFont fontWithName:nil size:18],
+    [waitingText setAttributes:@{NSFontAttributeName:[UIFont fontWithName:nil size:20],
                                  NSForegroundColorAttributeName:[UIColor whiteColor]} range:NSMakeRange(0, [waitingText length])];
     
     [self.progressView setHidden:NO];
