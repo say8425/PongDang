@@ -52,9 +52,9 @@
                               NSForegroundColorAttributeName:[UIColor lightGrayColor]} range:NSMakeRange(0, [tempUnit length])];
     [tempText appendAttributedString:tempUnit];
     
-    [self.tempLoad setAttributedTitle:tempText forState:UIControlStateNormal];
-    [self.progressView setHidden:YES];
-    currentConnection = nil;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.84 * NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        [self getTempStartEnd:tempText];
+    });
 }
 
 - (IBAction)tempLoad:(id)sender {
@@ -81,7 +81,7 @@
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - Custom Fuction
+#pragma mark - Custom Function for ProgressView
 - (UIImage *)translucentImageFromImage:(UIImage *)image withAlpha:(CGFloat)alpha {
     CGRect rect = CGRectZero;
     rect.size = image.size;
@@ -108,6 +108,17 @@
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
 }
 
+- (void)setTempLoadForState {
+    UIImage *highlightImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.4f];
+    UIImage *normalImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.6f];
+    UIImage *selectedImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.0f];
+    
+    [self.tempLoad setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
+    [self.tempLoad setBackgroundImage:normalImage forState:UIControlStateNormal];
+    [self.tempLoad setBackgroundImage:selectedImage forState:UIControlStateSelected];
+}
+
+#pragma mark - Start get temperature
 - (void)getTempStart {
     [self.progressView setIndeterminate:YES];
     NSURL *tempURL = [NSURL URLWithString:@"http://hangang.dkserver.wo.tc"];
@@ -122,14 +133,10 @@
     self.apiReturnData = [NSMutableData data];
 }
 
-- (void)setTempLoadForState {
-    UIImage *highlightImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.4f];
-    UIImage *normalImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.6f];
-    UIImage *selectedImage = [self translucentImageFromImage:[UIImage imageNamed:@"dropWater.png"] withAlpha:0.0f];
-    
-    [self.tempLoad setBackgroundImage:highlightImage forState:UIControlStateHighlighted];
-    [self.tempLoad setBackgroundImage:normalImage forState:UIControlStateNormal];
-    [self.tempLoad setBackgroundImage:selectedImage forState:UIControlStateSelected];
+- (void)getTempStartEnd:(NSMutableAttributedString *)tempText {
+    [self.tempLoad setAttributedTitle:tempText forState:UIControlStateNormal];
+    [self.progressView setHidden:YES];
+    currentConnection = nil;
 }
 
 @end
