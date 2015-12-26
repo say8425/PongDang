@@ -65,21 +65,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A2P-zo-6Gz" customClass="M13ProgressViewRing">
-                                <rect key="frame" x="180" y="161" width="240" height="240"/>
+                                <rect key="frame" x="180" y="172" width="240" height="240"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="In7-kx-3l0"/>
                                     <constraint firstAttribute="height" constant="240" id="djC-3L-bgP"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Die-wR-CGY" userLabel="tempLoad">
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Die-wR-CGY" userLabel="tempLoad">
                                 <rect key="frame" x="248" y="196" width="105" height="170"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="170" id="Vfg-f8-bhH"/>
                                     <constraint firstAttribute="width" constant="105" id="Zop-xK-Z4h"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <inset key="contentEdgeInsets" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" backgroundImage="dropWater.png"/>
+                                <state key="normal" backgroundImage="dropWater.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">측정중
+이에요</string>
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="18" name="AppleSDGothicNeo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="tempLoad:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4hi-Zk-lSl"/>
                                 </connections>
@@ -101,7 +112,7 @@
                             <constraint firstItem="2jI-Ow-bP8" firstAttribute="centerX" secondItem="Xl5-YI-Rv5" secondAttribute="centerX" id="jOJ-Lo-KQB"/>
                             <constraint firstItem="Die-wR-CGY" firstAttribute="width" secondItem="2jI-Ow-bP8" secondAttribute="height" multiplier="7:40" id="kkM-bh-PMq"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2jI-Ow-bP8" secondAttribute="bottom" id="mUA-b9-cnf"/>
-                            <constraint firstItem="A2P-zo-6Gz" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" constant="-19" id="ptp-uj-Qh8"/>
+                            <constraint firstItem="A2P-zo-6Gz" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" constant="-8" id="ptp-uj-Qh8"/>
                             <constraint firstItem="A2P-zo-6Gz" firstAttribute="centerX" secondItem="2jI-Ow-bP8" secondAttribute="centerX" id="qFL-tG-wB1"/>
                             <constraint firstItem="Die-wR-CGY" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" id="sBr-AD-97m"/>
                         </constraints>
