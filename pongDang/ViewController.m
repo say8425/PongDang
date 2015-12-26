@@ -87,7 +87,7 @@
 
 #pragma mark - Setting for progressView and tempLoadButton
 - (void)setProgressView {
-    [self.progressView setSecondaryColor:[self colorFromHexString:@"#D3DBDE"]];
+    [self.progressView setSecondaryColor:[self colorFromHexString:@"#D3DBDE" withAlpha:0.42f]];
     [self.progressView setShowPercentage:NO];
 }
 
@@ -103,6 +103,7 @@
 
 #pragma mark - Start End get temperature
 - (void)getTempStart {
+    [self.loadingBack setHidden:NO];
     [self.progressView setIndeterminate:YES];
     NSURL *tempURL = [NSURL URLWithString:@"http://hangang.dkserver.wo.tc"];
     NSURLRequest *tempRequest = [NSURLRequest requestWithURL:tempURL];
@@ -117,18 +118,19 @@
 }
 
 - (void)getTempEnd:(NSMutableAttributedString *)tempText {
+    [self.loadingBack setHidden:YES];
     [self.tempLoad setAttributedTitle:tempText forState:UIControlStateNormal];
     [self.progressView setHidden:YES];
     currentConnection = nil;
 }
 
 #pragma mark - Custom Function
-- (UIColor *)colorFromHexString:(NSString *)hexString {
+- (UIColor *)colorFromHexString:(NSString *)hexString withAlpha:(CGFloat)alpha {
     unsigned rgbValue = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];
     [scanner setScanLocation:1]; // bypass '#' character
     [scanner scanHexInt:&rgbValue];
-    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+    return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:alpha];
 }
 
 - (UIImage *)translucentImageFromImage:(UIImage *)image withAlpha:(CGFloat)alpha {

@@ -27,6 +27,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hanDay.png" translatesAutoresizingMaskIntoConstraints="NO" id="2jI-Ow-bP8" userLabel="hanDay.png">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backButton.png" translatesAutoresizingMaskIntoConstraints="NO" id="tow-YR-FA3" userLabel="loadingBack">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="600" id="2Bn-lN-XMW"/>
+                                    <constraint firstAttribute="height" constant="600" id="gn7-Cj-nLl"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2Bn-lN-XMW"/>
+                                        <exclude reference="gn7-Cj-nLl"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JOI-7V-RAb" userLabel="exportButton">
                                 <rect key="frame" x="553" y="553" width="45" height="45"/>
                                 <constraints>
@@ -90,12 +103,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="JOI-7V-RAb" secondAttribute="trailing" constant="2" id="1lr-DI-Rgb"/>
+                            <constraint firstItem="tow-YR-FA3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="2NA-eb-IS3"/>
                             <constraint firstItem="Die-wR-CGY" firstAttribute="centerY" secondItem="2jI-Ow-bP8" secondAttribute="centerY" constant="-19" id="5gJ-Ul-Z68"/>
                             <constraint firstItem="Xl5-YI-Rv5" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="80" id="DJd-sS-wII"/>
                             <constraint firstItem="A2P-zo-6Gz" firstAttribute="width" secondItem="2jI-Ow-bP8" secondAttribute="height" multiplier="2:5" id="IT6-qM-qKh"/>
+                            <constraint firstItem="tow-YR-FA3" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="PcC-ea-RvF"/>
                             <constraint firstItem="C6h-4a-ds2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="6" id="SZX-br-YkL"/>
                             <constraint firstAttribute="trailing" secondItem="2jI-Ow-bP8" secondAttribute="trailing" id="VXt-Q7-QdG"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JOI-7V-RAb" secondAttribute="bottom" constant="2" id="WY6-X1-2xL"/>
+                            <constraint firstItem="tow-YR-FA3" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" id="Z2M-Uk-0LF"/>
+                            <constraint firstItem="tow-YR-FA3" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" id="a1T-0u-z9t"/>
                             <constraint firstItem="Die-wR-CGY" firstAttribute="centerX" secondItem="2jI-Ow-bP8" secondAttribute="centerX" id="ddP-oz-vvd"/>
                             <constraint firstItem="2jI-Ow-bP8" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="gXU-F6-ahN"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="C6h-4a-ds2" secondAttribute="bottom" constant="3" id="gpg-xj-9mG"/>
@@ -116,6 +133,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="loadingBack" destination="tow-YR-FA3" id="seb-b3-97X"/>
                         <outlet property="mainView" destination="kh9-bI-dsS" id="mpB-zC-Exx"/>
                         <outlet property="nowHanGang" destination="Xl5-YI-Rv5" id="Fo5-0g-ABG"/>
                         <outlet property="progressView" destination="A2P-zo-6Gz" id="Y05-D1-e4M"/>

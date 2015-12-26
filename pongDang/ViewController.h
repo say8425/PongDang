@@ -19,6 +19,7 @@
 @property (assign, nonatomic) float temp;
 @property (strong, nonatomic) IBOutlet UIButton *tempLoad;
 @property (retain, nonatomic) IBOutlet M13ProgressViewRing *progressView;
+@property (strong, nonatomic) IBOutlet UIImageView *loadingBack;
 
 - (IBAction)exportButton:(id)sender;
 - (IBAction)whoButton:(id)sender;
